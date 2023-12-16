@@ -99,11 +99,6 @@ return {
             vim.o.timeout = true
             vim.o.timeoutlen = 300
         end,
-        opts = {
-            -- your configuration comes here
-            -- or leave it empty to use the default settings
-            -- refer to the configuration section below
-        }
     },
     {
         "lewis6991/gitsigns.nvim",
@@ -139,5 +134,5 @@ return {
                 map({ "o", "x" }, "ih", ":<C-U>Gitsigns select_hunk<CR>", "GitSigns Select Hunk")
             end,
         }
-    }
+    },
 }
