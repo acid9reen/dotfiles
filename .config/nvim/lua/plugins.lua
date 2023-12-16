@@ -99,6 +99,7 @@ return {
             vim.o.timeout = true
             vim.o.timeoutlen = 300
         end,
+        opts = {}
     },
     {
         "lewis6991/gitsigns.nvim",
