@@ -12,6 +12,17 @@ lspconfig.pyright.setup{
         return util.root_pattern(unpack(root_files))(fname) or util.find_git_ancestor(fname) or util.path.dirname(fname)
     end,
     capabilities = capabilities,
+    single_file_support = true,
+    settings = {
+        python = {
+            analysis = {
+                autoSearchPaths = true,
+                useLibraryCodeForTypes = true,
+                diagnosticMode = 'openFilesOnly',
+                autoImportCompletions = false,
+            },
+        },
+    },
 }
 
 lspconfig.hls.setup{
