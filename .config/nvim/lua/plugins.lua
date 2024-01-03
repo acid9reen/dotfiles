@@ -8,7 +8,22 @@ return {
 			vim.cmd([[colorscheme gruvbox]])
 		end,
 	},
-	"neovim/nvim-lspconfig",
+    {
+        "williamboman/mason.nvim",
+        dependencies = {
+            "williamboman/mason-lspconfig.nvim",
+        },
+        config = function ()
+            local mason = require("mason")
+            local mason_lspconfig = require("mason-lspconfig")
+
+            mason.setup()
+            mason_lspconfig.setup({
+                ensure_installed = { "lua_ls", "pyright", "hls" },
+            })
+        end
+    },
+    "neovim/nvim-lspconfig",
 	{
 		"nvim-treesitter/nvim-treesitter",
 		build = ":TSUpdate",
@@ -19,7 +34,7 @@ return {
 				ensure_installed = {"python", "lua", "haskell"},
 				sync_install = false,
 				highlight = { enable = true },
-				indent = { enable = true },
+				indent = { enable = false },
 			})
 		end
 	},
