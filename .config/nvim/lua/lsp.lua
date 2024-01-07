@@ -25,14 +25,20 @@ lspconfig.pyright.setup{
     },
 }
 
-lspconfig.ruff_lsp.setup{}
+lspconfig.ruff_lsp.setup{capabilities=capabilities}
+-- As workaround
+-- :setfiletype yaml.docker-compose
+lspconfig.docker_compose_language_service.setup{capabilities=capabilities}
+lspconfig.dockerls.setup{capabilities=capabilities}
+lspconfig.yamlls.setup{capabilities=capabilities}
+lspconfig.taplo.setup{capabilities=capabilities}
 
-lspconfig.hls.setup{
-    filetypes = { "haskell", "lhaskell", "cabal" },
-    capabilities = capabilities,
-}
+-- lspconfig.hls.setup{
+--     filetypes = { "haskell", "lhaskell", "cabal" },
+--     capabilities = capabilities,
+-- }
 
-lspconfig.lua_ls.setup{}
+lspconfig.lua_ls.setup{capabilities=capabilities}
 
 -- Global mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions

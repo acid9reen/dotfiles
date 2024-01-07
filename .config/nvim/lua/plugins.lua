@@ -19,7 +19,7 @@ return {
 
             mason.setup()
             mason_lspconfig.setup({
-                ensure_installed = { "lua_ls", "pyright", "hls" },
+                ensure_installed = { "lua_ls", "pyright", },
             })
         end
     },
