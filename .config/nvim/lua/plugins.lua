@@ -44,7 +44,6 @@ return {
 	"hrsh7th/nvim-cmp",
 	"hrsh7th/cmp-nvim-lsp",
     "saadparwaiz1/cmp_luasnip",
-    "/hrsh7th/cmp-nvim-lsp-signature-help",
     {
         "L3MON4D3/LuaSnip",
         version = "2.*",
@@ -59,8 +58,7 @@ return {
 
 			vim.keymap.set('n', '<leader>pf', builtin.find_files, {desc = 'Find files'})
 			vim.keymap.set('n', '<C-p>', builtin.git_files, {desc = 'Git files'})
-			vim.keymap.set('n', '<leader>ps', function ()
-				builtin.grep_string({ search = vim.fn.input("Grep > ") }); end, {desc = 'Find in files'})
+			vim.keymap.set('n', '<leader>ps', builtin.live_grep, {desc = 'Find in files'})
 			vim.keymap.set('n', '<leader>fb', builtin.buffers, {desc = 'Find buffer'})
 			vim.keymap.set('n', '<leader>fh', builtin.help_tags, {desc = 'Find help'})
 		end
@@ -154,5 +152,33 @@ return {
                 map({ "o", "x" }, "ih", ":<C-U>Gitsigns select_hunk<CR>", "GitSigns Select Hunk")
             end,
         }
+    },
+    {
+        "ThePrimeagen/refactoring.nvim",
+        dependencies = {
+            "nvim-lua/plenary.nvim",
+            "nvim-treesitter/nvim-treesitter",
+        },
+        config = function()
+            require("refactoring").setup()
+        end,
+    },
+    {
+        'stevearc/dressing.nvim',
+        opts = {},
+    },
+    {
+        "folke/noice.nvim",
+        event = "VeryLazy",
+        opts = {
+            -- add any options here
+        },
+        dependencies = {
+            "MunifTanjim/nui.nvim",
+            "rcarriga/nvim-notify",
+        },
+        config = function()
+            require("noice").setup()
+        end,
     },
 }
