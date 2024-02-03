@@ -1,10 +1,11 @@
-vim.opt.guicursor = ""
+-- vim.opt.guicursor = ""
+vim.opt.guicursor = "n-v-c-sm:block,i-ci-ve:ver25,r-cr-o:hor20"
 
 vim.opt.nu = true
 vim.opt.relativenumber = true
 
-vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
+vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 
@@ -28,4 +29,10 @@ vim.opt.isfname:append("@-@")
 
 vim.opt.updatetime = 50
 
-vim.opt.colorcolumn = "90"
+vim.opt.colorcolumn = "100"
+
+-- Set up python indentation
+vim.g.python_indent = {
+    open_paren = 'shiftwidth()',
+    closed_paren_align_last_line = false,
+}

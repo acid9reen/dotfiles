@@ -34,7 +34,7 @@ return {
 				ensure_installed = {"python", "lua", "haskell"},
 				sync_install = false,
 				highlight = { enable = true },
-				indent = { enable = false },
+				indent = { disable = { "python" } },
 			})
 		end
 	},
