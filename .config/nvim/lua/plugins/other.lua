@@ -12,11 +12,6 @@ return {
         build = "make install_jsregexp",
     },
     {
-        'numToStr/Comment.nvim',
-        lazy = false,
-        opts = {},
-    },
-    {
         "cappyzawa/trim.nvim",
         ft_blocklist = {"markdown"},
         opts = {},
