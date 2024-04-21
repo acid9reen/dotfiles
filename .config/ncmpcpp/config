@@ -89,7 +89,7 @@ mpd_music_dir = /home/ruslan/data/Music
 ## visualization and audio.
 ##
 #
-visualizer_sync_interval = 30
+# visualizer_sync_interval = 30
 #
 ##
 ## Note: To enable spectrum frequency visualization you need to compile ncmpcpp
