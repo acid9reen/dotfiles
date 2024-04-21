@@ -11,4 +11,10 @@ vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><
 vim.keymap.set("t", "<Esc>", "<C-\\><C-n>", {desc = '<Esc> to exit terminal mode'})
 
 -- Do not replace buffer after delete and paste
-vim.keymap.set("x", "<leader>p", "\"_dP")
+vim.keymap.set("x", "<leader>P", "\"_dP")
+
+vim.keymap.set("x", "<leader>y", "\"+y")
+vim.keymap.set("x", "<leader>p", "\"+p")
+
+vim.keymap.set("n", "<leader>b", "YpVr")
+vim.keymap.set("i", "<C-a>", "<C-6>")

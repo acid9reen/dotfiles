@@ -38,3 +38,28 @@ vim.g.python_indent = {
     open_paren = 'shiftwidth()',
     closed_paren_align_last_line = false,
 }
+
+-- Some latex stuff
+vim.g.tex_flavor = 'latex'
+
+vim.g.tex_indent_items = 0
+vim.g.tex_indent_and = 0
+vim.g.tex_indent_brace = 0
+vim.g.tex_no_error = 1
+
+-- Spellcheck
+vim.opt.spelllang = { "en_us", "ru" }
+vim.api.nvim_create_autocmd("FileType", {
+	pattern = { "html", "markdown", "text", "tex", "rst" },
+	callback = function()
+		vim.opt_local.spell = true
+	end,
+})
+
+-- Switch languages on ctrl+6
+vim.opt.keymap = "russian-jcukenwin"
+-- Options to use by default en
+vim.opt.iminsert = 0
+vim.opt.imsearch = 0
+
+vim.g.have_nerd_font = true

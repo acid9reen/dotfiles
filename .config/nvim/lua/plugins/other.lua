@@ -3,8 +3,8 @@ return {
     "hrsh7th/cmp-buffer",
     "hrsh7th/cmp-path",
     "hrsh7th/cmp-cmdline",
-	"hrsh7th/nvim-cmp",
-	"hrsh7th/cmp-nvim-lsp",
+    "hrsh7th/nvim-cmp",
+    "hrsh7th/cmp-nvim-lsp",
     "saadparwaiz1/cmp_luasnip",
     {
         "L3MON4D3/LuaSnip",
@@ -13,7 +13,11 @@ return {
     },
     {
         "cappyzawa/trim.nvim",
-        ft_blocklist = {"markdown"},
+        ft_blocklist = { "markdown" },
         opts = {},
     },
+    { "echasnovski/mini.indentscope", version = false, opts = {} },
+    { "echasnovski/mini.surround",    version = false, opts = {} },
+    { "MunifTanjim/nui.nvim",         lazy = true },
+    { "sheerun/vim-polyglot" }
 }
