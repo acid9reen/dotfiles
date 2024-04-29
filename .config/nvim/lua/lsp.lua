@@ -33,6 +33,7 @@ lspconfig.dockerls.setup { capabilities = capabilities }
 lspconfig.yamlls.setup { capabilities = capabilities }
 lspconfig.taplo.setup { capabilities = capabilities }
 lspconfig.lua_ls.setup { capabilities = capabilities }
+lspconfig.jsonls.setup { capabilities = capabilities }
 lspconfig.texlab.setup { capabilities = capabilities, cmd = { 'texlab' } }
 
 -- Global mappings.
