@@ -8,9 +8,10 @@ return {
                 json = { "jq" },
                 lua = { "stylua" },
                 python = { "ruff_format" },
+                tex = { "latexindent" },
             },
         })
 
-        vim.o.formatexpr = "v:lua.require'conform'.formatexpr()"
+        vim.keymap.set('n', '<leader>ff', conform.format, {desc = 'Format' })
     end
 }
