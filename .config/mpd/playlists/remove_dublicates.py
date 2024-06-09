@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import argparse
 import asyncio
 import shutil
@@ -20,7 +22,9 @@ def parse_args() -> DublicationRemoverNamespace:
     parser = argparse.ArgumentParser()
 
     parser.add_argument("filepath", type=Path, help="Path to target playlist/s")
-    parser.add_argument("-n", "--num-workers", type=int, help="Num of cpu processes")
+    parser.add_argument(
+        "-n", "--num-workers", type=int, help="Num of cpu processes", default=1
+    )
     parser.add_argument(
         "-b", "--backup", action="store_true", help="Create backup file"
     )
