@@ -1,4 +1,4 @@
-vim.keymap.set("n", "<leader>pv", vim.cmd.Ex, {desc = 'Open netrw'})
+vim.keymap.set("n", "-", vim.cmd.Ex, {desc = 'Open netrw'})
 
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv", {desc = 'Move selection down'})
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv", {desc = 'Move selection up'})
@@ -14,7 +14,7 @@ vim.keymap.set("t", "<Esc>", "<C-\\><C-n>", {desc = '<Esc> to exit terminal mode
 vim.keymap.set("x", "<leader>P", "\"_dP")
 
 vim.keymap.set("x", "<leader>y", "\"+y")
-vim.keymap.set("x", "<leader>p", "\"+p")
+-- vim.keymap.set("x", "<leader>p", "\"+p")
 
 vim.keymap.set("n", "<leader>b", "YpVr")
 vim.keymap.set("i", "<C-a>", "<C-6>")
