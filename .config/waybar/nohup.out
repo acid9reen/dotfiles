@@ -1,0 +1,963 @@
+[2024-06-01 16:30:28.678] [info] Using configuration file /home/ruslan/.config/waybar/config.jsonc
+[2024-06-01 16:30:28.679] [info] Discovered appearance 'dark'
+[2024-06-01 16:30:28.679] [info] Using CSS file /home/ruslan/.config/waybar/style.css
+
+(waybar:8094): Gtk-WARNING **: 16:30:28.679: Theme parsing error: style.css:77:21: Not using units is deprecated. Assuming 'px'.
+[2024-06-01 16:30:28.684] [info] Hyprland IPC starting
+[2024-06-01 16:30:28.684] [warning] $XDG_RUNTIME_DIR/hypr does not exist, falling back to /tmp/hypr
+[2024-06-01 16:30:28.684] [info] Loading persistent workspaces from Waybar config
+[2024-06-01 16:30:28.684] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-06-01 16:30:28.719] [warning] Requested height: 30 is less than the minimum height: 32 required by the modules
+[2024-06-01 16:30:28.719] [info] Bar configured (width: 2540, height: 32) for output: DP-3
+[2024-06-01 16:30:45.428] [info] Using configuration file /home/ruslan/.config/waybar/config.jsonc
+[2024-06-01 16:30:45.430] [info] Discovered appearance 'dark'
+[2024-06-01 16:30:45.430] [info] Using CSS file /home/ruslan/.config/waybar/style.css
+
+(waybar:8198): Gtk-WARNING **: 16:30:45.430: Theme parsing error: style.css:77:21: Not using units is deprecated. Assuming 'px'.
+[2024-06-01 16:30:45.434] [info] Hyprland IPC starting
+[2024-06-01 16:30:45.434] [warning] $XDG_RUNTIME_DIR/hypr does not exist, falling back to /tmp/hypr
+[2024-06-01 16:30:45.434] [info] Loading persistent workspaces from Waybar config
+[2024-06-01 16:30:45.435] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-06-01 16:30:45.470] [warning] Requested height: 30 is less than the minimum height: 32 required by the modules
+[2024-06-01 16:30:45.470] [info] Bar configured (width: 2540, height: 32) for output: DP-3
+[2024-06-01 16:31:36.048] [info] Using configuration file /home/ruslan/.config/waybar/config.jsonc
+[2024-06-01 16:31:36.049] [info] Discovered appearance 'dark'
+[2024-06-01 16:31:36.049] [info] Using CSS file /home/ruslan/.config/waybar/style.css
+
+(waybar:8570): Gtk-WARNING **: 16:31:36.049: Theme parsing error: style.css:77:21: Not using units is deprecated. Assuming 'px'.
+[2024-06-01 16:31:36.049] [error] style.css:1:27Missing semicolon at end of color definition
+[2024-06-01 16:32:33.891] [info] Using configuration file /home/ruslan/.config/waybar/config.jsonc
+[2024-06-01 16:32:33.892] [info] Discovered appearance 'dark'
+[2024-06-01 16:32:33.892] [info] Using CSS file /home/ruslan/.config/waybar/style.css
+
+(waybar:8945): Gtk-WARNING **: 16:32:33.892: Theme parsing error: style.css:77:21: Not using units is deprecated. Assuming 'px'.
+[2024-06-01 16:32:33.895] [info] Hyprland IPC starting
+[2024-06-01 16:32:33.895] [warning] $XDG_RUNTIME_DIR/hypr does not exist, falling back to /tmp/hypr
+[2024-06-01 16:32:33.896] [info] Loading persistent workspaces from Waybar config
+[2024-06-01 16:32:33.896] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-06-01 16:32:33.931] [warning] Requested height: 30 is less than the minimum height: 32 required by the modules
+[2024-06-01 16:32:33.931] [info] Bar configured (width: 2540, height: 32) for output: DP-3
+[2024-06-01 16:33:48.488] [info] Using configuration file /home/ruslan/.config/waybar/config.jsonc
+[2024-06-01 16:33:48.490] [info] Discovered appearance 'dark'
+[2024-06-01 16:33:48.490] [info] Using CSS file /home/ruslan/.config/waybar/style.css
+
+(waybar:9321): Gtk-WARNING **: 16:33:48.490: Theme parsing error: style.css:77:21: Not using units is deprecated. Assuming 'px'.
+[2024-06-01 16:33:48.493] [info] Hyprland IPC starting
+[2024-06-01 16:33:48.493] [warning] $XDG_RUNTIME_DIR/hypr does not exist, falling back to /tmp/hypr
+[2024-06-01 16:33:48.496] [info] Loading persistent workspaces from Waybar config
+[2024-06-01 16:33:48.496] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-06-01 16:33:48.532] [warning] Requested height: 30 is less than the minimum height: 32 required by the modules
+[2024-06-01 16:33:48.532] [info] Bar configured (width: 2540, height: 32) for output: DP-3
+[2024-06-01 16:33:59.930] [info] Using configuration file /home/ruslan/.config/waybar/config.jsonc
+[2024-06-01 16:33:59.931] [info] Discovered appearance 'dark'
+[2024-06-01 16:33:59.931] [info] Using CSS file /home/ruslan/.config/waybar/style.css
+
+(waybar:9380): Gtk-WARNING **: 16:33:59.931: Theme parsing error: style.css:77:21: Not using units is deprecated. Assuming 'px'.
+[2024-06-01 16:33:59.936] [info] Hyprland IPC starting
+[2024-06-01 16:33:59.936] [warning] $XDG_RUNTIME_DIR/hypr does not exist, falling back to /tmp/hypr
+[2024-06-01 16:33:59.937] [info] Loading persistent workspaces from Waybar config
+[2024-06-01 16:33:59.937] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-06-01 16:33:59.977] [warning] Requested height: 30 is less than the minimum height: 32 required by the modules
+[2024-06-01 16:33:59.977] [info] Bar configured (width: 2540, height: 32) for output: DP-3
+[2024-06-01 16:34:11.053] [info] Using configuration file /home/ruslan/.config/waybar/config.jsonc
+[2024-06-01 16:34:11.054] [info] Discovered appearance 'dark'
+[2024-06-01 16:34:11.054] [info] Using CSS file /home/ruslan/.config/waybar/style.css
+
+(waybar:9504): Gtk-WARNING **: 16:34:11.055: Theme parsing error: style.css:77:21: Not using units is deprecated. Assuming 'px'.
+[2024-06-01 16:34:11.060] [info] Hyprland IPC starting
+[2024-06-01 16:34:11.060] [warning] $XDG_RUNTIME_DIR/hypr does not exist, falling back to /tmp/hypr
+[2024-06-01 16:34:11.060] [info] Loading persistent workspaces from Waybar config
+[2024-06-01 16:34:11.060] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-06-01 16:34:11.101] [warning] Requested height: 30 is less than the minimum height: 32 required by the modules
+[2024-06-01 16:34:11.101] [info] Bar configured (width: 2540, height: 32) for output: DP-3
+[2024-06-01 16:36:17.631] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-06-01 16:36:17.632] [info] Loading persistent workspaces from Waybar config
+[2024-06-01 16:36:17.632] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-06-01 16:36:19.717] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-06-01 16:36:19.718] [info] Loading persistent workspaces from Waybar config
+[2024-06-01 16:36:19.718] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-06-01 16:36:24.801] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-06-01 16:36:24.802] [info] Loading persistent workspaces from Waybar config
+[2024-06-01 16:36:24.802] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-06-01 16:36:25.886] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-06-01 16:36:25.886] [info] Loading persistent workspaces from Waybar config
+[2024-06-01 16:36:25.886] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-06-01 16:36:30.984] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-06-01 16:36:30.985] [info] Loading persistent workspaces from Waybar config
+[2024-06-01 16:36:30.985] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-06-01 16:36:43.837] [info] Using configuration file /home/ruslan/.config/waybar/config.jsonc
+[2024-06-01 16:36:43.838] [info] Discovered appearance 'dark'
+[2024-06-01 16:36:43.838] [info] Using CSS file /home/ruslan/.config/waybar/style.css
+
+(waybar:10923): Gtk-WARNING **: 16:36:43.838: Theme parsing error: style.css:77:21: Not using units is deprecated. Assuming 'px'.
+[2024-06-01 16:36:43.843] [info] Hyprland IPC starting
+[2024-06-01 16:36:43.843] [warning] $XDG_RUNTIME_DIR/hypr does not exist, falling back to /tmp/hypr
+[2024-06-01 16:36:43.844] [info] Loading persistent workspaces from Waybar config
+[2024-06-01 16:36:43.844] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-06-01 16:36:43.883] [warning] Requested height: 30 is less than the minimum height: 32 required by the modules
+[2024-06-01 16:36:43.883] [info] Bar configured (width: 2540, height: 32) for output: DP-3
+[2024-06-01 16:36:54.987] [info] Using configuration file /home/ruslan/.config/waybar/config.jsonc
+[2024-06-01 16:36:54.988] [info] Discovered appearance 'dark'
+[2024-06-01 16:36:54.988] [info] Using CSS file /home/ruslan/.config/waybar/style.css
+
+(waybar:10988): Gtk-WARNING **: 16:36:54.988: Theme parsing error: style.css:77:21: Not using units is deprecated. Assuming 'px'.
+[2024-06-01 16:36:54.992] [info] Hyprland IPC starting
+[2024-06-01 16:36:54.992] [warning] $XDG_RUNTIME_DIR/hypr does not exist, falling back to /tmp/hypr
+[2024-06-01 16:36:54.992] [warning] $XDG_RUNTIME_DIR/hypr does not exist, falling back to /tmp/hypr
+[2024-06-01 16:36:54.994] [info] Loading persistent workspaces from Waybar config
+[2024-06-01 16:36:54.994] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-06-01 16:36:55.031] [warning] Requested height: 30 is less than the minimum height: 32 required by the modules
+[2024-06-01 16:36:55.031] [info] Bar configured (width: 2540, height: 32) for output: DP-3
+[2024-06-01 16:37:30.611] [info] Using configuration file /home/ruslan/.config/waybar/config.jsonc
+[2024-06-01 16:37:30.612] [info] Discovered appearance 'dark'
+[2024-06-01 16:37:30.612] [info] Using CSS file /home/ruslan/.config/waybar/style.css
+
+(waybar:11154): Gtk-WARNING **: 16:37:30.612: Theme parsing error: style.css:77:21: Not using units is deprecated. Assuming 'px'.
+[2024-06-01 16:37:30.618] [info] Hyprland IPC starting
+[2024-06-01 16:37:30.619] [warning] $XDG_RUNTIME_DIR/hypr does not exist, falling back to /tmp/hypr
+[2024-06-01 16:37:30.620] [info] Loading persistent workspaces from Waybar config
+[2024-06-01 16:37:30.620] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-06-01 16:37:30.660] [warning] Requested height: 30 is less than the minimum height: 32 required by the modules
+[2024-06-01 16:37:30.660] [info] Bar configured (width: 2540, height: 32) for output: DP-3
+[2024-06-01 16:38:18.099] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-06-01 16:38:18.100] [info] Loading persistent workspaces from Waybar config
+[2024-06-01 16:38:18.100] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-06-01 16:38:22.192] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-06-01 16:38:22.193] [info] Loading persistent workspaces from Waybar config
+[2024-06-01 16:38:22.193] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-06-01 16:38:32.118] [info] Using configuration file /home/ruslan/.config/waybar/config.jsonc
+[2024-06-01 16:38:32.120] [info] Discovered appearance 'dark'
+[2024-06-01 16:38:32.120] [info] Using CSS file /home/ruslan/.config/waybar/style.css
+
+(waybar:11496): Gtk-WARNING **: 16:38:32.120: Theme parsing error: style.css:77:21: Not using units is deprecated. Assuming 'px'.
+[2024-06-01 16:38:32.125] [info] Hyprland IPC starting
+[2024-06-01 16:38:32.125] [warning] $XDG_RUNTIME_DIR/hypr does not exist, falling back to /tmp/hypr
+[2024-06-01 16:38:32.126] [info] Loading persistent workspaces from Waybar config
+[2024-06-01 16:38:32.126] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-06-01 16:38:32.162] [warning] Requested height: 30 is less than the minimum height: 32 required by the modules
+[2024-06-01 16:38:32.162] [info] Bar configured (width: 2540, height: 32) for output: DP-3
+Billy Talent - Voices Of Violence
+[paused]  #269/3001   2:45/3:10 (86%)
+volume:100%   repeat: off   random: off   single: off   consume: off
+
+(waybar:11496): Gtk-WARNING **: 17:04:43.567: Theme parsing error: colors-dark.css:135:44: Missing opening bracket in color definition
+Gdk-Message: 18:38:07.942: Error reading events from display: Connection reset by peer
+[2024-06-05 14:14:18.182] [info] Using configuration file /home/ruslan/.config/waybar/config.jsonc
+[2024-06-05 14:14:18.184] [info] Discovered appearance 'dark'
+[2024-06-05 14:14:18.184] [info] Using CSS file /home/ruslan/.config/waybar/style.css
+
+(waybar:75008): Gtk-WARNING **: 14:14:18.184: Theme parsing error: style.css:77:21: Not using units is deprecated. Assuming 'px'.
+[2024-06-05 14:14:18.187] [info] Hyprland IPC starting
+[2024-06-05 14:14:18.187] [warning] $XDG_RUNTIME_DIR/hypr does not exist, falling back to /tmp/hypr
+[2024-06-05 14:14:18.191] [info] Loading persistent workspaces from Waybar config
+[2024-06-05 14:14:18.191] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-06-05 14:14:18.238] [warning] Requested height: 30 is less than the minimum height: 32 required by the modules
+[2024-06-05 14:14:18.239] [info] Bar configured (width: 2540, height: 32) for output: DP-3
+
+(waybar:75008): Gtk-CRITICAL **: 14:14:18.299: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:75008): Gtk-CRITICAL **: 14:14:18.299: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:75008): Gtk-CRITICAL **: 14:14:18.300: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:75008): Gtk-CRITICAL **: 14:14:18.300: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:75008): Gtk-CRITICAL **: 14:14:18.300: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:75008): Gtk-CRITICAL **: 14:14:18.300: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:75008): Gtk-CRITICAL **: 14:14:18.301: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:75008): Gtk-CRITICAL **: 14:14:18.301: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:75008): Gtk-CRITICAL **: 14:14:18.301: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:75008): Gtk-CRITICAL **: 14:14:18.301: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+[2024-06-05 14:14:34.265] [info] Using configuration file /home/ruslan/.config/waybar/config.jsonc
+[2024-06-05 14:14:34.266] [info] Discovered appearance 'dark'
+[2024-06-05 14:14:34.266] [info] Using CSS file /home/ruslan/.config/waybar/style.css
+
+(waybar:75138): Gtk-WARNING **: 14:14:34.266: Theme parsing error: style.css:77:21: Not using units is deprecated. Assuming 'px'.
+[2024-06-05 14:14:34.271] [info] Hyprland IPC starting
+[2024-06-05 14:14:34.271] [warning] $XDG_RUNTIME_DIR/hypr does not exist, falling back to /tmp/hypr
+[2024-06-05 14:14:34.272] [info] Loading persistent workspaces from Waybar config
+[2024-06-05 14:14:34.273] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-06-05 14:14:34.312] [warning] Requested height: 30 is less than the minimum height: 32 required by the modules
+[2024-06-05 14:14:34.312] [info] Bar configured (width: 2540, height: 32) for output: DP-3
+
+(waybar:75138): Gtk-CRITICAL **: 14:14:34.371: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:75138): Gtk-CRITICAL **: 14:14:34.371: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:75138): Gtk-CRITICAL **: 14:14:34.372: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:75138): Gtk-CRITICAL **: 14:14:34.372: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:75138): Gtk-CRITICAL **: 14:14:34.372: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:75138): Gtk-CRITICAL **: 14:14:34.372: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:75138): Gtk-CRITICAL **: 14:14:34.373: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:75138): Gtk-CRITICAL **: 14:14:34.373: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:75138): Gtk-CRITICAL **: 14:14:34.373: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:75138): Gtk-CRITICAL **: 14:14:34.373: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+[2024-06-05 14:15:14.324] [info] Using configuration file /home/ruslan/.config/waybar/config.jsonc
+[2024-06-05 14:15:14.325] [info] Discovered appearance 'dark'
+[2024-06-05 14:15:14.325] [info] Using CSS file /home/ruslan/.config/waybar/style.css
+
+(waybar:75395): Gtk-WARNING **: 14:15:14.325: Theme parsing error: style.css:68:21: Not using units is deprecated. Assuming 'px'.
+[2024-06-05 14:15:14.330] [info] Hyprland IPC starting
+[2024-06-05 14:15:14.330] [warning] $XDG_RUNTIME_DIR/hypr does not exist, falling back to /tmp/hypr
+[2024-06-05 14:15:14.330] [warning] $XDG_RUNTIME_DIR/hypr does not exist, falling back to /tmp/hypr
+[2024-06-05 14:15:14.332] [info] Loading persistent workspaces from Waybar config
+[2024-06-05 14:15:14.332] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-06-05 14:15:14.373] [warning] Requested height: 30 is less than the minimum height: 32 required by the modules
+[2024-06-05 14:15:14.373] [info] Bar configured (width: 2540, height: 32) for output: DP-3
+
+(waybar:75395): Gtk-CRITICAL **: 14:15:14.430: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:75395): Gtk-CRITICAL **: 14:15:14.430: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:75395): Gtk-CRITICAL **: 14:15:14.431: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:75395): Gtk-CRITICAL **: 14:15:14.431: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:75395): Gtk-CRITICAL **: 14:15:14.431: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:75395): Gtk-CRITICAL **: 14:15:14.431: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:75395): Gtk-CRITICAL **: 14:15:14.432: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:75395): Gtk-CRITICAL **: 14:15:14.432: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:75395): Gtk-CRITICAL **: 14:15:14.433: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:75395): Gtk-CRITICAL **: 14:15:14.433: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+[2024-06-05 14:16:16.408] [info] Using configuration file /home/ruslan/.config/waybar/config.jsonc
+[2024-06-05 14:16:16.409] [info] Discovered appearance 'dark'
+[2024-06-05 14:16:16.409] [info] Using CSS file /home/ruslan/.config/waybar/style.css
+
+(waybar:76731): Gtk-WARNING **: 14:16:16.410: Theme parsing error: style.css:68:21: Not using units is deprecated. Assuming 'px'.
+[2024-06-05 14:16:16.415] [info] Hyprland IPC starting
+[2024-06-05 14:16:16.415] [warning] $XDG_RUNTIME_DIR/hypr does not exist, falling back to /tmp/hypr
+[2024-06-05 14:16:16.415] [error] Hyprland IPC: Couldn't connect to /tmp/hypr/.socket.sock. (3)
+[2024-06-05 14:16:16.415] [warning] module hyprland/workspaces: Disabling module "hyprland/workspaces", Error parsing JSON: * Line 1, Column 1
+  Syntax error: value, object or array expected.
+
+[2024-06-05 14:16:16.447] [info] Bar configured (width: 2540, height: 30) for output: DP-3
+
+(waybar:76731): Gtk-CRITICAL **: 14:16:16.509: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:76731): Gtk-CRITICAL **: 14:16:16.509: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:76731): Gtk-CRITICAL **: 14:16:16.509: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:76731): Gtk-CRITICAL **: 14:16:16.509: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:76731): Gtk-CRITICAL **: 14:16:16.509: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:76731): Gtk-CRITICAL **: 14:16:16.509: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:76731): Gtk-CRITICAL **: 14:16:16.511: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:76731): Gtk-CRITICAL **: 14:16:16.511: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:76731): Gtk-CRITICAL **: 14:16:16.512: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:76731): Gtk-CRITICAL **: 14:16:16.512: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+[2024-06-05 14:16:22.921] [info] Using configuration file /home/ruslan/.config/waybar/config.jsonc
+[2024-06-05 14:16:22.922] [info] Discovered appearance 'dark'
+[2024-06-05 14:16:22.922] [info] Using CSS file /home/ruslan/.config/waybar/style.css
+
+(waybar:76822): Gtk-WARNING **: 14:16:22.923: Theme parsing error: style.css:68:21: Not using units is deprecated. Assuming 'px'.
+[2024-06-05 14:16:22.929] [info] Hyprland IPC starting
+[2024-06-05 14:16:22.929] [warning] $XDG_RUNTIME_DIR/hypr does not exist, falling back to /tmp/hypr
+[2024-06-05 14:16:22.930] [info] Loading persistent workspaces from Waybar config
+[2024-06-05 14:16:22.930] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-06-05 14:16:22.986] [warning] Requested height: 30 is less than the minimum height: 32 required by the modules
+[2024-06-05 14:16:22.986] [info] Bar configured (width: 2540, height: 32) for output: DP-3
+
+(waybar:76822): Gtk-CRITICAL **: 14:16:23.046: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:76822): Gtk-CRITICAL **: 14:16:23.046: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:76822): Gtk-CRITICAL **: 14:16:23.046: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:76822): Gtk-CRITICAL **: 14:16:23.046: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:76822): Gtk-CRITICAL **: 14:16:23.046: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:76822): Gtk-CRITICAL **: 14:16:23.046: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:76822): Gtk-CRITICAL **: 14:16:23.048: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:76822): Gtk-CRITICAL **: 14:16:23.048: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:76822): Gtk-CRITICAL **: 14:16:23.048: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:76822): Gtk-CRITICAL **: 14:16:23.048: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+[2024-06-05 14:16:50.479] [info] Using configuration file /home/ruslan/.config/waybar/config.jsonc
+[2024-06-05 14:16:50.480] [info] Discovered appearance 'dark'
+[2024-06-05 14:16:50.480] [info] Using CSS file /home/ruslan/.config/waybar/style.css
+
+(waybar:76969): Gtk-WARNING **: 14:16:50.481: Theme parsing error: style.css:68:21: Not using units is deprecated. Assuming 'px'.
+[2024-06-05 14:16:50.487] [info] Hyprland IPC starting
+[2024-06-05 14:16:50.487] [warning] $XDG_RUNTIME_DIR/hypr does not exist, falling back to /tmp/hypr
+[2024-06-05 14:16:50.492] [info] Loading persistent workspaces from Waybar config
+[2024-06-05 14:16:50.492] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-06-05 14:16:50.534] [warning] Requested height: 30 is less than the minimum height: 40 required by the modules
+[2024-06-05 14:16:50.534] [info] Bar configured (width: 2540, height: 40) for output: DP-3
+
+(waybar:76969): Gtk-CRITICAL **: 14:16:50.594: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:76969): Gtk-CRITICAL **: 14:16:50.594: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:76969): Gtk-CRITICAL **: 14:16:50.594: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:76969): Gtk-CRITICAL **: 14:16:50.594: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:76969): Gtk-CRITICAL **: 14:16:50.594: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:76969): Gtk-CRITICAL **: 14:16:50.594: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:76969): Gtk-CRITICAL **: 14:16:50.596: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:76969): Gtk-CRITICAL **: 14:16:50.596: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:76969): Gtk-CRITICAL **: 14:16:50.597: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:76969): Gtk-CRITICAL **: 14:16:50.597: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+[2024-06-05 14:17:11.058] [info] Using configuration file /home/ruslan/.config/waybar/config.jsonc
+[2024-06-05 14:17:11.060] [info] Discovered appearance 'dark'
+[2024-06-05 14:17:11.060] [info] Using CSS file /home/ruslan/.config/waybar/style.css
+
+(waybar:77074): Gtk-WARNING **: 14:17:11.060: Theme parsing error: style.css:68:21: Not using units is deprecated. Assuming 'px'.
+[2024-06-05 14:17:11.066] [info] Hyprland IPC starting
+[2024-06-05 14:17:11.066] [warning] $XDG_RUNTIME_DIR/hypr does not exist, falling back to /tmp/hypr
+[2024-06-05 14:17:11.069] [info] Loading persistent workspaces from Waybar config
+[2024-06-05 14:17:11.069] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-06-05 14:17:11.122] [warning] Requested height: 30 is less than the minimum height: 32 required by the modules
+[2024-06-05 14:17:11.122] [info] Bar configured (width: 2540, height: 32) for output: DP-3
+
+(waybar:77074): Gtk-CRITICAL **: 14:17:11.181: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:77074): Gtk-CRITICAL **: 14:17:11.181: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:77074): Gtk-CRITICAL **: 14:17:11.181: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:77074): Gtk-CRITICAL **: 14:17:11.181: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:77074): Gtk-CRITICAL **: 14:17:11.181: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:77074): Gtk-CRITICAL **: 14:17:11.181: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:77074): Gtk-CRITICAL **: 14:17:11.183: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:77074): Gtk-CRITICAL **: 14:17:11.183: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:77074): Gtk-CRITICAL **: 14:17:11.183: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:77074): Gtk-CRITICAL **: 14:17:11.183: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+[2024-06-05 14:17:39.110] [info] Using configuration file /home/ruslan/.config/waybar/config.jsonc
+[2024-06-05 14:17:39.111] [info] Discovered appearance 'dark'
+[2024-06-05 14:17:39.111] [info] Using CSS file /home/ruslan/.config/waybar/style.css
+
+(waybar:77207): Gtk-WARNING **: 14:17:39.112: Theme parsing error: style.css:68:21: Not using units is deprecated. Assuming 'px'.
+[2024-06-05 14:17:39.117] [info] Hyprland IPC starting
+[2024-06-05 14:17:39.117] [warning] $XDG_RUNTIME_DIR/hypr does not exist, falling back to /tmp/hypr
+[2024-06-05 14:17:39.121] [info] Loading persistent workspaces from Waybar config
+[2024-06-05 14:17:39.121] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-06-05 14:17:39.157] [warning] Requested height: 30 is less than the minimum height: 40 required by the modules
+[2024-06-05 14:17:39.157] [info] Bar configured (width: 2540, height: 40) for output: DP-3
+
+(waybar:77207): Gtk-CRITICAL **: 14:17:39.218: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:77207): Gtk-CRITICAL **: 14:17:39.218: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:77207): Gtk-CRITICAL **: 14:17:39.218: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:77207): Gtk-CRITICAL **: 14:17:39.218: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:77207): Gtk-CRITICAL **: 14:17:39.218: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:77207): Gtk-CRITICAL **: 14:17:39.218: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:77207): Gtk-CRITICAL **: 14:17:39.220: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:77207): Gtk-CRITICAL **: 14:17:39.220: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:77207): Gtk-CRITICAL **: 14:17:39.220: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:77207): Gtk-CRITICAL **: 14:17:39.220: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+[2024-06-05 14:17:58.830] [info] Using configuration file /home/ruslan/.config/waybar/config.jsonc
+[2024-06-05 14:17:58.831] [info] Discovered appearance 'dark'
+[2024-06-05 14:17:58.831] [info] Using CSS file /home/ruslan/.config/waybar/style.css
+
+(waybar:77380): Gtk-WARNING **: 14:17:58.831: Theme parsing error: style.css:68:21: Not using units is deprecated. Assuming 'px'.
+
+(waybar:77380): Gtk-WARNING **: 14:17:58.831: Theme parsing error: style.css:72:20: Not using units is deprecated. Assuming 'px'.
+
+(waybar:77380): Gtk-WARNING **: 14:17:58.831: Theme parsing error: style.css:72:22: Not using units is deprecated. Assuming 'px'.
+[2024-06-05 14:17:58.835] [info] Hyprland IPC starting
+[2024-06-05 14:17:58.835] [warning] $XDG_RUNTIME_DIR/hypr does not exist, falling back to /tmp/hypr
+[2024-06-05 14:17:58.835] [info] Loading persistent workspaces from Waybar config
+[2024-06-05 14:17:58.835] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-06-05 14:17:58.883] [warning] Requested height: 30 is less than the minimum height: 37 required by the modules
+[2024-06-05 14:17:58.883] [info] Bar configured (width: 2540, height: 37) for output: DP-3
+
+(waybar:77380): Gtk-CRITICAL **: 14:17:58.943: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:77380): Gtk-CRITICAL **: 14:17:58.943: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:77380): Gtk-CRITICAL **: 14:17:58.943: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:77380): Gtk-CRITICAL **: 14:17:58.943: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:77380): Gtk-CRITICAL **: 14:17:58.943: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:77380): Gtk-CRITICAL **: 14:17:58.943: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:77380): Gtk-CRITICAL **: 14:17:58.945: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:77380): Gtk-CRITICAL **: 14:17:58.945: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:77380): Gtk-CRITICAL **: 14:17:58.945: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:77380): Gtk-CRITICAL **: 14:17:58.945: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+[2024-06-05 14:18:10.041] [info] Using configuration file /home/ruslan/.config/waybar/config.jsonc
+[2024-06-05 14:18:10.043] [info] Discovered appearance 'dark'
+[2024-06-05 14:18:10.043] [info] Using CSS file /home/ruslan/.config/waybar/style.css
+
+(waybar:77682): Gtk-WARNING **: 14:18:10.043: Theme parsing error: style.css:68:21: Not using units is deprecated. Assuming 'px'.
+[2024-06-05 14:18:10.047] [info] Hyprland IPC starting
+[2024-06-05 14:18:10.047] [warning] $XDG_RUNTIME_DIR/hypr does not exist, falling back to /tmp/hypr
+[2024-06-05 14:18:10.049] [info] Loading persistent workspaces from Waybar config
+[2024-06-05 14:18:10.049] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-06-05 14:18:10.097] [warning] Requested height: 30 is less than the minimum height: 32 required by the modules
+[2024-06-05 14:18:10.097] [info] Bar configured (width: 2540, height: 32) for output: DP-3
+
+(waybar:77682): Gtk-CRITICAL **: 14:18:10.161: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:77682): Gtk-CRITICAL **: 14:18:10.161: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:77682): Gtk-CRITICAL **: 14:18:10.161: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:77682): Gtk-CRITICAL **: 14:18:10.161: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:77682): Gtk-CRITICAL **: 14:18:10.161: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:77682): Gtk-CRITICAL **: 14:18:10.161: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:77682): Gtk-CRITICAL **: 14:18:10.162: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:77682): Gtk-CRITICAL **: 14:18:10.162: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:77682): Gtk-CRITICAL **: 14:18:10.163: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:77682): Gtk-CRITICAL **: 14:18:10.163: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+[2024-06-05 14:18:56.882] [info] Using configuration file /home/ruslan/.config/waybar/config.jsonc
+[2024-06-05 14:18:56.884] [info] Discovered appearance 'dark'
+[2024-06-05 14:18:56.884] [info] Using CSS file /home/ruslan/.config/waybar/style.css
+
+(waybar:77905): Gtk-WARNING **: 14:18:56.884: Theme parsing error: style.css:68:21: Not using units is deprecated. Assuming 'px'.
+[2024-06-05 14:18:56.888] [info] Hyprland IPC starting
+[2024-06-05 14:18:56.888] [warning] $XDG_RUNTIME_DIR/hypr does not exist, falling back to /tmp/hypr
+[2024-06-05 14:18:56.890] [info] Loading persistent workspaces from Waybar config
+[2024-06-05 14:18:56.891] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-06-05 14:18:56.942] [warning] Requested height: 30 is less than the minimum height: 32 required by the modules
+[2024-06-05 14:18:56.942] [info] Bar configured (width: 2540, height: 32) for output: DP-3
+
+(waybar:77905): Gtk-CRITICAL **: 14:18:57.000: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:77905): Gtk-CRITICAL **: 14:18:57.000: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:77905): Gtk-CRITICAL **: 14:18:57.000: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:77905): Gtk-CRITICAL **: 14:18:57.000: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:77905): Gtk-CRITICAL **: 14:18:57.001: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:77905): Gtk-CRITICAL **: 14:18:57.001: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:77905): Gtk-CRITICAL **: 14:18:57.002: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:77905): Gtk-CRITICAL **: 14:18:57.002: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:77905): Gtk-CRITICAL **: 14:18:57.002: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:77905): Gtk-CRITICAL **: 14:18:57.002: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+[2024-06-05 14:19:17.046] [info] Using configuration file /home/ruslan/.config/waybar/config.jsonc
+[2024-06-05 14:19:17.048] [info] Discovered appearance 'dark'
+[2024-06-05 14:19:17.048] [info] Using CSS file /home/ruslan/.config/waybar/style.css
+
+(waybar:78000): Gtk-WARNING **: 14:19:17.048: Theme parsing error: style.css:68:21: Not using units is deprecated. Assuming 'px'.
+[2024-06-05 14:19:17.061] [info] Hyprland IPC starting
+[2024-06-05 14:19:17.061] [warning] $XDG_RUNTIME_DIR/hypr does not exist, falling back to /tmp/hypr
+[2024-06-05 14:19:17.065] [info] Loading persistent workspaces from Waybar config
+[2024-06-05 14:19:17.065] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-06-05 14:19:17.115] [warning] Requested height: 30 is less than the minimum height: 32 required by the modules
+[2024-06-05 14:19:17.115] [info] Bar configured (width: 2540, height: 32) for output: DP-3
+
+(waybar:78000): Gtk-CRITICAL **: 14:19:17.176: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:78000): Gtk-CRITICAL **: 14:19:17.176: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:78000): Gtk-CRITICAL **: 14:19:17.176: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:78000): Gtk-CRITICAL **: 14:19:17.176: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:78000): Gtk-CRITICAL **: 14:19:17.176: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:78000): Gtk-CRITICAL **: 14:19:17.176: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:78000): Gtk-CRITICAL **: 14:19:17.177: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:78000): Gtk-CRITICAL **: 14:19:17.177: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:78000): Gtk-CRITICAL **: 14:19:17.178: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:78000): Gtk-CRITICAL **: 14:19:17.178: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+[2024-06-05 14:19:22.932] [info] Using configuration file /home/ruslan/.config/waybar/config.jsonc
+[2024-06-05 14:19:22.933] [info] Discovered appearance 'dark'
+[2024-06-05 14:19:22.933] [info] Using CSS file /home/ruslan/.config/waybar/style.css
+
+(waybar:78104): Gtk-WARNING **: 14:19:22.933: Theme parsing error: style.css:68:21: Not using units is deprecated. Assuming 'px'.
+[2024-06-05 14:19:22.934] [error] style.css:125:0Expected a valid selector
+[2024-06-05 14:19:30.942] [info] Using configuration file /home/ruslan/.config/waybar/config.jsonc
+[2024-06-05 14:19:30.943] [info] Discovered appearance 'dark'
+[2024-06-05 14:19:30.943] [info] Using CSS file /home/ruslan/.config/waybar/style.css
+
+(waybar:78163): Gtk-WARNING **: 14:19:30.943: Theme parsing error: style.css:68:21: Not using units is deprecated. Assuming 'px'.
+[2024-06-05 14:19:30.943] [error] style.css:125:0Expected a valid selector
+[2024-06-05 14:19:41.082] [info] Using configuration file /home/ruslan/.config/waybar/config.jsonc
+[2024-06-05 14:19:41.083] [info] Discovered appearance 'dark'
+[2024-06-05 14:19:41.083] [info] Using CSS file /home/ruslan/.config/waybar/style.css
+
+(waybar:78216): Gtk-WARNING **: 14:19:41.083: Theme parsing error: style.css:68:21: Not using units is deprecated. Assuming 'px'.
+[2024-06-05 14:19:41.086] [info] Hyprland IPC starting
+[2024-06-05 14:19:41.086] [warning] $XDG_RUNTIME_DIR/hypr does not exist, falling back to /tmp/hypr
+[2024-06-05 14:19:41.087] [info] Loading persistent workspaces from Waybar config
+[2024-06-05 14:19:41.087] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-06-05 14:19:41.140] [warning] Requested height: 30 is less than the minimum height: 32 required by the modules
+[2024-06-05 14:19:41.140] [info] Bar configured (width: 2540, height: 32) for output: DP-3
+
+(waybar:78216): Gtk-CRITICAL **: 14:19:41.199: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:78216): Gtk-CRITICAL **: 14:19:41.199: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:78216): Gtk-CRITICAL **: 14:19:41.199: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:78216): Gtk-CRITICAL **: 14:19:41.199: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:78216): Gtk-CRITICAL **: 14:19:41.199: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:78216): Gtk-CRITICAL **: 14:19:41.199: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:78216): Gtk-CRITICAL **: 14:19:41.200: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:78216): Gtk-CRITICAL **: 14:19:41.201: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:78216): Gtk-CRITICAL **: 14:19:41.201: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:78216): Gtk-CRITICAL **: 14:19:41.201: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+[2024-06-05 14:19:50.475] [info] Using configuration file /home/ruslan/.config/waybar/config.jsonc
+[2024-06-05 14:19:50.476] [info] Discovered appearance 'dark'
+[2024-06-05 14:19:50.476] [info] Using CSS file /home/ruslan/.config/waybar/style.css
+
+(waybar:78321): Gtk-WARNING **: 14:19:50.477: Theme parsing error: style.css:68:21: Not using units is deprecated. Assuming 'px'.
+[2024-06-05 14:19:50.483] [info] Hyprland IPC starting
+[2024-06-05 14:19:50.483] [warning] $XDG_RUNTIME_DIR/hypr does not exist, falling back to /tmp/hypr
+[2024-06-05 14:19:50.487] [info] Loading persistent workspaces from Waybar config
+[2024-06-05 14:19:50.487] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-06-05 14:19:50.530] [warning] Requested height: 30 is less than the minimum height: 32 required by the modules
+[2024-06-05 14:19:50.530] [info] Bar configured (width: 2540, height: 32) for output: DP-3
+
+(waybar:78321): Gtk-CRITICAL **: 14:19:50.592: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:78321): Gtk-CRITICAL **: 14:19:50.592: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:78321): Gtk-CRITICAL **: 14:19:50.592: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:78321): Gtk-CRITICAL **: 14:19:50.592: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:78321): Gtk-CRITICAL **: 14:19:50.593: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:78321): Gtk-CRITICAL **: 14:19:50.593: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:78321): Gtk-CRITICAL **: 14:19:50.594: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:78321): Gtk-CRITICAL **: 14:19:50.594: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:78321): Gtk-CRITICAL **: 14:19:50.594: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:78321): Gtk-CRITICAL **: 14:19:50.594: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+[2024-06-05 14:20:13.249] [info] Using configuration file /home/ruslan/.config/waybar/config.jsonc
+[2024-06-05 14:20:13.250] [info] Discovered appearance 'dark'
+[2024-06-05 14:20:13.250] [info] Using CSS file /home/ruslan/.config/waybar/style.css
+
+(waybar:78406): Gtk-WARNING **: 14:20:13.250: Theme parsing error: style.css:68:21: Not using units is deprecated. Assuming 'px'.
+[2024-06-05 14:20:13.251] [error] style.css:129:4'/*' in comment block
+[2024-06-05 14:20:26.819] [info] Using configuration file /home/ruslan/.config/waybar/config.jsonc
+[2024-06-05 14:20:26.820] [info] Discovered appearance 'dark'
+[2024-06-05 14:20:26.820] [info] Using CSS file /home/ruslan/.config/waybar/style.css
+
+(waybar:78504): Gtk-WARNING **: 14:20:26.820: Theme parsing error: style.css:68:21: Not using units is deprecated. Assuming 'px'.
+[2024-06-05 14:20:26.823] [info] Hyprland IPC starting
+[2024-06-05 14:20:26.823] [warning] $XDG_RUNTIME_DIR/hypr does not exist, falling back to /tmp/hypr
+[2024-06-05 14:20:26.825] [info] Loading persistent workspaces from Waybar config
+[2024-06-05 14:20:26.825] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-06-05 14:20:26.873] [warning] Requested height: 30 is less than the minimum height: 32 required by the modules
+[2024-06-05 14:20:26.873] [info] Bar configured (width: 2540, height: 32) for output: DP-3
+
+(waybar:78504): Gtk-CRITICAL **: 14:20:26.930: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:78504): Gtk-CRITICAL **: 14:20:26.930: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:78504): Gtk-CRITICAL **: 14:20:26.930: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:78504): Gtk-CRITICAL **: 14:20:26.930: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:78504): Gtk-CRITICAL **: 14:20:26.931: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:78504): Gtk-CRITICAL **: 14:20:26.931: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:78504): Gtk-CRITICAL **: 14:20:26.932: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:78504): Gtk-CRITICAL **: 14:20:26.932: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:78504): Gtk-CRITICAL **: 14:20:26.932: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:78504): Gtk-CRITICAL **: 14:20:26.932: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+[2024-06-05 14:20:36.248] [info] Using configuration file /home/ruslan/.config/waybar/config.jsonc
+[2024-06-05 14:20:36.250] [info] Discovered appearance 'dark'
+[2024-06-05 14:20:36.250] [info] Using CSS file /home/ruslan/.config/waybar/style.css
+
+(waybar:78570): Gtk-WARNING **: 14:20:36.250: Theme parsing error: style.css:68:21: Not using units is deprecated. Assuming 'px'.
+[2024-06-05 14:20:36.253] [info] Hyprland IPC starting
+[2024-06-05 14:20:36.253] [warning] $XDG_RUNTIME_DIR/hypr does not exist, falling back to /tmp/hypr
+[2024-06-05 14:20:36.256] [info] Loading persistent workspaces from Waybar config
+[2024-06-05 14:20:36.256] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-06-05 14:20:36.301] [warning] Requested height: 30 is less than the minimum height: 32 required by the modules
+[2024-06-05 14:20:36.301] [info] Bar configured (width: 2540, height: 32) for output: DP-3
+
+(waybar:78570): Gtk-CRITICAL **: 14:20:36.364: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:78570): Gtk-CRITICAL **: 14:20:36.364: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:78570): Gtk-CRITICAL **: 14:20:36.364: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:78570): Gtk-CRITICAL **: 14:20:36.364: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:78570): Gtk-CRITICAL **: 14:20:36.365: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:78570): Gtk-CRITICAL **: 14:20:36.365: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:78570): Gtk-CRITICAL **: 14:20:36.366: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:78570): Gtk-CRITICAL **: 14:20:36.366: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:78570): Gtk-CRITICAL **: 14:20:36.366: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:78570): Gtk-CRITICAL **: 14:20:36.366: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+[2024-06-05 14:20:55.624] [info] Using configuration file /home/ruslan/.config/waybar/config.jsonc
+[2024-06-05 14:20:55.625] [info] Discovered appearance 'dark'
+[2024-06-05 14:20:55.625] [info] Using CSS file /home/ruslan/.config/waybar/style.css
+
+(waybar:78712): Gtk-WARNING **: 14:20:55.625: Theme parsing error: style.css:68:21: Not using units is deprecated. Assuming 'px'.
+[2024-06-05 14:20:55.635] [info] Hyprland IPC starting
+[2024-06-05 14:20:55.635] [warning] $XDG_RUNTIME_DIR/hypr does not exist, falling back to /tmp/hypr
+[2024-06-05 14:20:55.636] [info] Loading persistent workspaces from Waybar config
+[2024-06-05 14:20:55.636] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-06-05 14:20:55.689] [warning] Requested height: 30 is less than the minimum height: 32 required by the modules
+[2024-06-05 14:20:55.689] [info] Bar configured (width: 2540, height: 32) for output: DP-3
+
+(waybar:78712): Gtk-CRITICAL **: 14:20:55.750: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:78712): Gtk-CRITICAL **: 14:20:55.750: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:78712): Gtk-CRITICAL **: 14:20:55.750: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:78712): Gtk-CRITICAL **: 14:20:55.750: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:78712): Gtk-CRITICAL **: 14:20:55.750: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:78712): Gtk-CRITICAL **: 14:20:55.750: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:78712): Gtk-CRITICAL **: 14:20:55.752: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:78712): Gtk-CRITICAL **: 14:20:55.752: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:78712): Gtk-CRITICAL **: 14:20:55.752: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:78712): Gtk-CRITICAL **: 14:20:55.752: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+[2024-06-05 14:23:18.474] [info] Using configuration file /home/ruslan/.config/waybar/config.jsonc
+[2024-06-05 14:23:18.475] [info] Discovered appearance 'dark'
+[2024-06-05 14:23:18.475] [info] Using CSS file /home/ruslan/.config/waybar/style.css
+
+(waybar:79497): Gtk-WARNING **: 14:23:18.475: Theme parsing error: style.css:68:21: Not using units is deprecated. Assuming 'px'.
+[2024-06-05 14:23:18.481] [info] Hyprland IPC starting
+[2024-06-05 14:23:18.481] [warning] $XDG_RUNTIME_DIR/hypr does not exist, falling back to /tmp/hypr
+[2024-06-05 14:23:18.484] [info] Loading persistent workspaces from Waybar config
+[2024-06-05 14:23:18.484] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-06-05 14:23:18.539] [warning] Requested height: 30 is less than the minimum height: 32 required by the modules
+[2024-06-05 14:23:18.539] [info] Bar configured (width: 2540, height: 32) for output: DP-3
+
+(waybar:79497): Gtk-CRITICAL **: 14:23:18.598: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:79497): Gtk-CRITICAL **: 14:23:18.598: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:79497): Gtk-CRITICAL **: 14:23:18.598: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:79497): Gtk-CRITICAL **: 14:23:18.598: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:79497): Gtk-CRITICAL **: 14:23:18.598: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:79497): Gtk-CRITICAL **: 14:23:18.598: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:79497): Gtk-CRITICAL **: 14:23:18.600: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:79497): Gtk-CRITICAL **: 14:23:18.600: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:79497): Gtk-CRITICAL **: 14:23:18.600: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:79497): Gtk-CRITICAL **: 14:23:18.600: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+[2024-06-05 14:23:53.300] [info] Using configuration file /home/ruslan/.config/waybar/config.jsonc
+[2024-06-05 14:23:53.301] [info] Discovered appearance 'dark'
+[2024-06-05 14:23:53.302] [info] Using CSS file /home/ruslan/.config/waybar/style.css
+
+(waybar:79634): Gtk-WARNING **: 14:23:53.302: Theme parsing error: style.css:68:21: Not using units is deprecated. Assuming 'px'.
+[2024-06-05 14:23:53.306] [info] Hyprland IPC starting
+[2024-06-05 14:23:53.306] [warning] $XDG_RUNTIME_DIR/hypr does not exist, falling back to /tmp/hypr
+[2024-06-05 14:23:53.308] [info] Loading persistent workspaces from Waybar config
+[2024-06-05 14:23:53.308] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-06-05 14:23:53.352] [warning] Requested height: 30 is less than the minimum height: 32 required by the modules
+[2024-06-05 14:23:53.352] [info] Bar configured (width: 2540, height: 32) for output: DP-3
+
+(waybar:79634): Gtk-CRITICAL **: 14:23:53.410: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:79634): Gtk-CRITICAL **: 14:23:53.410: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:79634): Gtk-CRITICAL **: 14:23:53.410: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:79634): Gtk-CRITICAL **: 14:23:53.410: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:79634): Gtk-CRITICAL **: 14:23:53.410: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:79634): Gtk-CRITICAL **: 14:23:53.410: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:79634): Gtk-CRITICAL **: 14:23:53.411: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:79634): Gtk-CRITICAL **: 14:23:53.411: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:79634): Gtk-CRITICAL **: 14:23:53.412: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:79634): Gtk-CRITICAL **: 14:23:53.412: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+sh: line 1: activate: command not found
+sh: line 1: activate: command not found
+
+(waybar:79634): Gtk-WARNING **: 14:31:28.367: Failed to set text '<b>CopyQ</b>
+<IMAGE>' from markup due to error parsing markup: Error on line 2 char 17: Element “markup” was closed, but the currently open element is “IMAGE”
+
+(waybar:79634): Gtk-WARNING **: 14:31:28.367: Failed to set text '<b>CopyQ</b>
+<IMAGE>' from markup due to error parsing markup: Error on line 2 char 17: Element “markup” was closed, but the currently open element is “IMAGE”
+
+(waybar:79634): Gtk-WARNING **: 14:31:28.369: Failed to set text '<b>CopyQ</b>
+<IMAGE>' from markup due to error parsing markup: Error on line 2 char 17: Element “markup” was closed, but the currently open element is “IMAGE”
+[2024-06-05 14:31:39.489] [info] Using configuration file /home/ruslan/.config/waybar/config.jsonc
+[2024-06-05 14:31:39.491] [info] Discovered appearance 'dark'
+[2024-06-05 14:31:39.491] [info] Using CSS file /home/ruslan/.config/waybar/style.css
+
+(waybar:83053): Gtk-WARNING **: 14:31:39.491: Theme parsing error: style.css:68:21: Not using units is deprecated. Assuming 'px'.
+[2024-06-05 14:31:39.497] [info] Hyprland IPC starting
+[2024-06-05 14:31:39.497] [warning] $XDG_RUNTIME_DIR/hypr does not exist, falling back to /tmp/hypr
+[2024-06-05 14:31:39.497] [warning] $XDG_RUNTIME_DIR/hypr does not exist, falling back to /tmp/hypr
+[2024-06-05 14:31:39.502] [info] Loading persistent workspaces from Waybar config
+[2024-06-05 14:31:39.502] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-06-05 14:31:39.564] [warning] Requested height: 30 is less than the minimum height: 32 required by the modules
+[2024-06-05 14:31:39.564] [info] Bar configured (width: 2540, height: 32) for output: DP-3
+
+(waybar:83053): Gtk-CRITICAL **: 14:31:39.622: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:83053): Gtk-CRITICAL **: 14:31:39.622: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:83053): Gtk-CRITICAL **: 14:31:39.622: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:83053): Gtk-CRITICAL **: 14:31:39.622: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:83053): Gtk-CRITICAL **: 14:31:39.623: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:83053): Gtk-CRITICAL **: 14:31:39.623: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:83053): Gtk-CRITICAL **: 14:31:39.624: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:83053): Gtk-CRITICAL **: 14:31:39.624: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:83053): Gtk-CRITICAL **: 14:31:39.624: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:83053): Gtk-CRITICAL **: 14:31:39.624: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+[2024-06-05 14:31:48.898] [info] Using configuration file /home/ruslan/.config/waybar/config.jsonc
+[2024-06-05 14:31:48.899] [info] Discovered appearance 'dark'
+[2024-06-05 14:31:48.899] [info] Using CSS file /home/ruslan/.config/waybar/style.css
+
+(waybar:83131): Gtk-WARNING **: 14:31:48.899: Theme parsing error: style.css:68:21: Not using units is deprecated. Assuming 'px'.
+[2024-06-05 14:31:48.906] [info] Hyprland IPC starting
+[2024-06-05 14:31:48.906] [warning] $XDG_RUNTIME_DIR/hypr does not exist, falling back to /tmp/hypr
+[2024-06-05 14:31:48.906] [info] Loading persistent workspaces from Waybar config
+[2024-06-05 14:31:48.906] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-06-05 14:31:48.946] [warning] Requested height: 30 is less than the minimum height: 32 required by the modules
+[2024-06-05 14:31:48.946] [info] Bar configured (width: 2540, height: 32) for output: DP-3
+
+(waybar:83131): Gtk-CRITICAL **: 14:31:49.007: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:83131): Gtk-CRITICAL **: 14:31:49.007: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:83131): Gtk-CRITICAL **: 14:31:49.008: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:83131): Gtk-CRITICAL **: 14:31:49.008: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:83131): Gtk-CRITICAL **: 14:31:49.008: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:83131): Gtk-CRITICAL **: 14:31:49.008: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:83131): Gtk-CRITICAL **: 14:31:49.009: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:83131): Gtk-CRITICAL **: 14:31:49.009: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:83131): Gtk-CRITICAL **: 14:31:49.010: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:83131): Gtk-CRITICAL **: 14:31:49.010: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+[2024-06-05 14:32:20.251] [info] Using configuration file /home/ruslan/.config/waybar/config.jsonc
+[2024-06-05 14:32:20.252] [info] Discovered appearance 'dark'
+[2024-06-05 14:32:20.252] [info] Using CSS file /home/ruslan/.config/waybar/style.css
+
+(waybar:83314): Gtk-WARNING **: 14:32:20.253: Theme parsing error: style.css:68:21: Not using units is deprecated. Assuming 'px'.
+[2024-06-05 14:32:20.259] [info] Hyprland IPC starting
+[2024-06-05 14:32:20.259] [warning] $XDG_RUNTIME_DIR/hypr does not exist, falling back to /tmp/hypr
+[2024-06-05 14:32:20.263] [info] Loading persistent workspaces from Waybar config
+[2024-06-05 14:32:20.263] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-06-05 14:32:20.306] [warning] Requested height: 30 is less than the minimum height: 32 required by the modules
+[2024-06-05 14:32:20.306] [info] Bar configured (width: 2540, height: 32) for output: DP-3
+
+(waybar:83314): Gtk-CRITICAL **: 14:32:20.364: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:83314): Gtk-CRITICAL **: 14:32:20.364: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:83314): Gtk-CRITICAL **: 14:32:20.365: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:83314): Gtk-CRITICAL **: 14:32:20.365: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:83314): Gtk-CRITICAL **: 14:32:20.365: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:83314): Gtk-CRITICAL **: 14:32:20.365: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:83314): Gtk-CRITICAL **: 14:32:20.366: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:83314): Gtk-CRITICAL **: 14:32:20.366: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:83314): Gtk-CRITICAL **: 14:32:20.366: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:83314): Gtk-CRITICAL **: 14:32:20.366: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+[2024-06-05 14:32:41.573] [info] Using configuration file /home/ruslan/.config/waybar/config.jsonc
+[2024-06-05 14:32:41.574] [info] Discovered appearance 'dark'
+[2024-06-05 14:32:41.574] [info] Using CSS file /home/ruslan/.config/waybar/style.css
+
+(waybar:83415): Gtk-WARNING **: 14:32:41.574: Theme parsing error: style.css:68:21: Not using units is deprecated. Assuming 'px'.
+[2024-06-05 14:32:41.581] [info] Hyprland IPC starting
+[2024-06-05 14:32:41.581] [warning] $XDG_RUNTIME_DIR/hypr does not exist, falling back to /tmp/hypr
+[2024-06-05 14:32:41.583] [info] Loading persistent workspaces from Waybar config
+[2024-06-05 14:32:41.583] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-06-05 14:32:41.640] [warning] Requested height: 30 is less than the minimum height: 32 required by the modules
+[2024-06-05 14:32:41.640] [info] Bar configured (width: 2540, height: 32) for output: DP-3
+
+(waybar:83415): Gtk-CRITICAL **: 14:32:41.698: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:83415): Gtk-CRITICAL **: 14:32:41.698: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:83415): Gtk-CRITICAL **: 14:32:41.698: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:83415): Gtk-CRITICAL **: 14:32:41.698: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:83415): Gtk-CRITICAL **: 14:32:41.698: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:83415): Gtk-CRITICAL **: 14:32:41.698: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:83415): Gtk-CRITICAL **: 14:32:41.699: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:83415): Gtk-CRITICAL **: 14:32:41.699: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:83415): Gtk-CRITICAL **: 14:32:41.700: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:83415): Gtk-CRITICAL **: 14:32:41.700: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:83415): Gtk-WARNING **: 15:27:19.107: Failed to set text '<b>CopyQ</b>
+<IMAGE>' from markup due to error parsing markup: Error on line 2 char 17: Element “markup” was closed, but the currently open element is “IMAGE”
+
+(waybar:83415): Gtk-WARNING **: 15:27:19.107: Failed to set text '<b>CopyQ</b>
+<IMAGE>' from markup due to error parsing markup: Error on line 2 char 17: Element “markup” was closed, but the currently open element is “IMAGE”
+
+(waybar:83415): Gtk-WARNING **: 15:27:19.113: Failed to set text '<b>CopyQ</b>
+<IMAGE>' from markup due to error parsing markup: Error on line 2 char 17: Element “markup” was closed, but the currently open element is “IMAGE”
+
+(waybar:83415): Gtk-WARNING **: 15:27:19.113: Failed to set text '<b>CopyQ</b>
+<IMAGE>' from markup due to error parsing markup: Error on line 2 char 17: Element “markup” was closed, but the currently open element is “IMAGE”
+
+(waybar:83415): Gtk-WARNING **: 15:27:19.113: Failed to set text '<b>CopyQ</b>
+<IMAGE>' from markup due to error parsing markup: Error on line 2 char 17: Element “markup” was closed, but the currently open element is “IMAGE”
+
+(waybar:83415): Gtk-WARNING **: 15:27:19.114: Failed to set text '<b>CopyQ</b>
+<IMAGE>' from markup due to error parsing markup: Error on line 2 char 17: Element “markup” was closed, but the currently open element is “IMAGE”
+sh: line 1: activate: command not found
+
+(waybar:83415): Gtk-WARNING **: 16:07:45.137: Failed to set text '<b>CopyQ</b>
+<IMAGE>' from markup due to error parsing markup: Error on line 2 char 17: Element “markup” was closed, but the currently open element is “IMAGE”
+
+(waybar:83415): Gtk-WARNING **: 16:07:45.137: Failed to set text '<b>CopyQ</b>
+<IMAGE>' from markup due to error parsing markup: Error on line 2 char 17: Element “markup” was closed, but the currently open element is “IMAGE”
+
+(waybar:83415): Gtk-WARNING **: 16:07:45.139: Failed to set text '<b>CopyQ</b>
+<IMAGE>' from markup due to error parsing markup: Error on line 2 char 17: Element “markup” was closed, but the currently open element is “IMAGE”
+
+(waybar:83415): Gtk-WARNING **: 16:07:45.143: Failed to set text '<b>CopyQ</b>
+<IMAGE>' from markup due to error parsing markup: Error on line 2 char 17: Element “markup” was closed, but the currently open element is “IMAGE”
+Queens of the Stone Age - Quick and to the Pointless
+[playing] #419/3003   1:10/1:43 (67%)
+volume: 50%   repeat: off   random: off   single: off   consume: off
+[2024-06-05 16:47:49.332] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-06-05 16:47:49.333] [info] Loading persistent workspaces from Waybar config
+[2024-06-05 16:47:49.333] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-06-05 16:48:17.453] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-06-05 16:48:17.454] [info] Loading persistent workspaces from Waybar config
+[2024-06-05 16:48:17.454] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-06-05 16:54:15.622] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-06-05 16:54:15.623] [info] Loading persistent workspaces from Waybar config
+[2024-06-05 16:54:15.623] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-06-05 16:54:17.725] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-06-05 16:54:17.726] [info] Loading persistent workspaces from Waybar config
+[2024-06-05 16:54:17.726] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-06-05 16:54:22.834] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-06-05 16:54:22.834] [info] Loading persistent workspaces from Waybar config
+[2024-06-05 16:54:22.834] [info] Loading persistent workspaces from Hyprland workspace rules
+Sick Puppies - Connect
+[paused]  #432/3003   0:23/3:45 (10%)
+volume: 50%   repeat: off   random: off   single: off   consume: off
+Sick Puppies - Connect
+[playing] #432/3003   0:23/3:45 (10%)
+volume: 50%   repeat: off   random: off   single: off   consume: off
+Nightwish - Beauty Of The Beast
+[paused]  #437/3003  10:24/10:25 (99%)
+volume:100%   repeat: off   random: off   single: off   consume: off
+
+(waybar:83415): Gtk-WARNING **: 22:29:37.735: Failed to set text '<b>CopyQ</b>
+<IMAGE>' from markup due to error parsing markup: Error on line 2 char 17: Element “markup” was closed, but the currently open element is “IMAGE”
+
+(waybar:83415): Gtk-WARNING **: 22:29:37.735: Failed to set text '<b>CopyQ</b>
+<IMAGE>' from markup due to error parsing markup: Error on line 2 char 17: Element “markup” was closed, but the currently open element is “IMAGE”
+
+(waybar:83415): Gtk-WARNING **: 22:29:37.741: Failed to set text '<b>CopyQ</b>
+<IMAGE>' from markup due to error parsing markup: Error on line 2 char 17: Element “markup” was closed, but the currently open element is “IMAGE”
+
+(waybar:83415): Gtk-WARNING **: 22:29:37.741: Failed to set text '<b>CopyQ</b>
+<IMAGE>' from markup due to error parsing markup: Error on line 2 char 17: Element “markup” was closed, but the currently open element is “IMAGE”

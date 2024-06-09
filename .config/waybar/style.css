@@ -1,0 +1,222 @@
+@define-color bg0_h rgba(29, 32, 33, 50);
+@define-color fg0 #FBF1C7;
+@define-color green #B8BB26;
+@define-color red #FB4934;
+@define-color yellow #FABD2F;
+@define-color blue #83A598;
+@define-color purple #D3869B;
+@define-color aqua #8EC07C;
+@define-color orange #FE8019;
+@define-color dark_blue #458588;
+
+* {
+    font-family: FiraCode Nerd Font;
+    font-size: 15px;
+}
+
+window#waybar {
+    background-color: transparent;
+    /* border-bottom: 3px solid rgba(100, 114, 125, 0.5); */
+    color: #ffffff;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+
+button {
+    /* Use box-shadow instead of border so the text isn't offset */
+    box-shadow: inset 0 -3px transparent;
+    /* Avoid rounded borders under each button name */
+    border: none;
+    border-radius: 0;
+}
+
+/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
+button:hover {
+    background: inherit;
+    box-shadow: inset 0 -3px #ffffff;
+}
+
+#window {
+    padding: 0 5px;
+    background-color: @dark_blue;
+    border-radius: 10px;
+    color: @fg;
+    font-weight: bold;
+}
+
+window#waybar.empty #window {
+    background-color: transparent;
+    padding: 0;
+}
+
+/* you can set a style on hover for any module like this */
+#pulseaudio:hover {
+    background-color: #a37800;
+}
+
+#workspaces button label {
+  font-size: 25px;
+}
+
+#workspaces {
+    background-color: @bg0_h;
+    border-radius: 10;
+}
+
+#workspaces button {
+    padding: 0 5px;
+    color: @fg0;
+}
+
+#workspaces button:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+/* #workspaces button.focused { */
+/*     background-color: #64727D; */
+/*     box-shadow: inset 0 -3px #ffffff; */
+/* } */
+
+
+@keyframes blink {
+    to {
+        color: @orange;
+    }
+}
+
+/* Using steps() instead of linear as a timing function to limit cpu usage */
+#workspaces button.urgent {
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: steps(12);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#workspaces button.empty {
+    color: #555555;
+}
+
+#workspaces button.active {
+    color: @green;
+}
+
+#mode {
+    background-color: #64727D;
+    box-shadow: inset 0 -3px #ffffff;
+}
+
+#clock,
+#pulseaudio,
+#wireplumber,
+#tray,
+#mpd {
+    padding: 0 10px;
+    color: @fg0;
+}
+
+#window,
+#workspaces {
+    margin: 0 4px;
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right > widget:last-child > #workspaces {
+    margin-right: 0;
+}
+
+#clock {
+    background-color: @bg0_h;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+#power-profiles-daemon {
+    padding-right: 15px;
+}
+
+#power-profiles-daemon.performance {
+    background-color: #f53c3c;
+    color: #ffffff;
+}
+
+#power-profiles-daemon.balanced {
+    background-color: #2980b9;
+    color: #ffffff;
+}
+
+#power-profiles-daemon.power-saver {
+    background-color: #2ecc71;
+    color: #000000;
+}
+
+label:focus {
+    background-color: #000000;
+}
+
+#pulseaudio {
+    background-color: @yellow;
+    color: #000000;
+    border-radius: 10px;
+}
+
+#pulseaudio.muted {
+    background-color: #90b1b1;
+    color: #2a5c45;
+}
+
+#tray {
+    background-color: @bg0_h;
+    border-radius: 10px;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: #eb4d4b;
+}
+
+#mpd {
+    background-color: @aqua;
+    color: @bg0_h;
+    border-radius: 10px;
+}
+
+#mpd.disconnected {
+    background-color: @red;
+}
+
+#language {
+    background: @orange;
+    color: @bg0_h;
+    /* padding: 0 5px; */
+    /* margin: 0 5px; */
+    border-radius: 10px;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#privacy {
+    padding: 0;
+}
+
+#privacy-item {
+    padding: 0 5px;
+    color: @fg;
+    background-color: @red;
+    border-radius: 10px;
+}
