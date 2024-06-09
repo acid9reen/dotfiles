@@ -9,9 +9,10 @@ return {
                 lua = { "stylua" },
                 python = { "ruff_format" },
                 tex = { "latexindent" },
+                yaml = { "yamlfix" },
             },
         })
 
-        vim.keymap.set('n', '<leader>ff', conform.format, {desc = 'Format' })
+        vim.keymap.set('n', '<leader>ff', conform.format, { desc = 'Format' })
     end
 }
