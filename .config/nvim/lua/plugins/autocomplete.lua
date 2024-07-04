@@ -1,6 +1,6 @@
 return {
-  "/hrsh7th/nvim-cmp",
-  dependencies = { "/L3MON4D3/LuaSnip" },
+  "hrsh7th/nvim-cmp",
+  dependencies = { "L3MON4D3/LuaSnip" },
   config = function()
     local luasnip = require("luasnip")
     local cmp = require("cmp")
@@ -16,8 +16,8 @@ return {
         ["<C-d>"] = cmp.mapping.scroll_docs(4), -- Down
         ["<C-Space>"] = cmp.mapping.complete(),
         ["<CR>"] = cmp.mapping.confirm({
-          behavior = cmp.ConfirmBehavior.Replace,
-          select = true,
+          behavior = cmp.ConfirmBehavior.Insert,
+          select = false,
         }),
         ["<Tab>"] = cmp.mapping(function(fallback)
           if cmp.visible() then

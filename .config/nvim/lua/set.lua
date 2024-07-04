@@ -50,7 +50,7 @@ vim.g.tex_no_error = 1
 -- Spellcheck
 vim.opt.spelllang = { "en_us", "ru" }
 vim.api.nvim_create_autocmd("FileType", {
-	pattern = { "html", "markdown", "text", "tex", "rst" },
+	pattern = { "html", "markdown", "text", "tex", "rst", "gitcommit" },
 	callback = function()
 		vim.opt_local.spell = true
 	end,
