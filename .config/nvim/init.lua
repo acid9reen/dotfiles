@@ -1,7 +1,8 @@
-require("set")
-require("remap")
+require("config.set")
+require("config.remap")
+
 require("config.lazy")
-require("lsp")
+require("config.lsp")
 require("snippets.python")
 
 if vim.g.neovide then
