@@ -13,6 +13,8 @@ local main = s(
   fmt(
     [[
     def {}() -> int:
+        {}
+
         return 0
 
 
@@ -20,8 +22,9 @@ local main = s(
         raise SystemExit({}())
     ]],
     {
-      i(1, "main"),
-      rep(1),
+      i(2, "main"),
+      i(1, ""),
+      rep(2),
     }
   )
 )
@@ -35,15 +38,26 @@ local amain = s(
 
 
     async def {}() -> int:
+        {}
+
+        return 0
+
+
+    def {}() -> int:
+        asyncio.run({}())
+
         return 0
 
 
     if __name__ == "__main__":
-        raise SystemExit(asyncio.run({}()))
+        raise SystemExit({}())
     ]],
     {
-      i(1, "main"),
-      rep(1),
+      i(2, "main_coro"),
+      i(1, ""),
+      i(3, "main"),
+      rep(2),
+      rep(3)
     }
   )
 )
