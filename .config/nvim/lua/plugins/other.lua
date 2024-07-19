@@ -15,5 +15,6 @@ return {
     { "echasnovski/mini.indentscope", version = false, opts = {} },
     { "echasnovski/mini.surround",    version = false, opts = {} },
     { "MunifTanjim/nui.nvim",         lazy = true },
-    { "sheerun/vim-polyglot" }
+    { "sheerun/vim-polyglot" },
+    { 'echasnovski/mini.icons', version = false },
 }
