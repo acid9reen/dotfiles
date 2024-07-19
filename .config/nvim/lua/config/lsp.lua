@@ -2,31 +2,6 @@ local lspconfig = require 'lspconfig'
 local util = require("lspconfig/util")
 local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
--- lspconfig.pyright.setup {
---   root_dir = function(fname)
---     local root_files = {
---       'pyproject.toml',
---       'setup.py',
---       'setup.cfg',
---       'makefile',
---       'Makefile',
---     }
---     return util.root_pattern(unpack(root_files))(fname) or util.find_git_ancestor(fname) or util.path.dirname(fname)
---   end,
---   capabilities = capabilities,
---   single_file_support = true,
---   settings = {
---     python = {
---       analysis = {
---         autoSearchPaths = true,
---         useLibraryCodeForTypes = true,
---         diagnosticMode = 'openFilesOnly',
---         autoImportCompletions = true,
---       },
---     },
---   },
--- }
-
 lspconfig.basedpyright.setup({
   root_dir = function(fname)
     local root_files = {
