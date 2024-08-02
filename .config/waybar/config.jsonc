@@ -98,6 +98,8 @@
     "hyprland/workspaces": {
         "format": "{icon}",
         "on-click": "activate",
+        "on-scroll-up": "hyprctl dispatch workspace -1",
+        "on-scroll-down": "hyprctl dispatch workspace +1",
         "format-icons": {
             "1": "",
             "2": "",
