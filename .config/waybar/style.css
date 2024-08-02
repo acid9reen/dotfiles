@@ -103,7 +103,7 @@ button:hover {
 #tray menu menuitem:hover {
     color: @fg0;
     background-color: @dark_orange;
-    border-radius: 10px;
+    border-radius: 7px;
 }
 
 #tray > .passive {
