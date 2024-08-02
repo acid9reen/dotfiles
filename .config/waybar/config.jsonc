@@ -1,33 +1,32 @@
 // -*- mode: jsonc -*-
 {
-    // "layer": "top", // Waybar at top layer
-    // "position": "bottom", // Waybar position (top|bottom|left|right)
-    "height": 30, // Waybar height (to be removed for auto height)
     "margin-top": 5,
-    "margin-left": 10,
-    "margin-right": 10,
-    // "width": 1280, // Waybar width
+    "margin-left": 15,
+    "margin-right": 15,
     "spacing": 4, // Gaps between modules (4px)
-    // Choose the order of the modules
     "modules-left": [
-        // "hyprland/window",
         "mpd",
     ],
     "modules-center": [
         "hyprland/workspaces",
     ],
     "modules-right": [
-        // "idle_inhibitor",
-        // "power-profiles-daemon",
-        "tray",
         "privacy",
-        "pulseaudio",
-        "hyprland/language",
-        "clock",
+        "tray",
+        "group/misc",
+        "group/group-power",
     ],
+    "group/misc": {
+        "orientation": "horizontal",
+        "modules": [
+            "pulseaudio",
+            "hyprland/language",
+            "clock",
+        ]
+    },
     "mpd": {
-        "format": "{stateIcon} {consumeIcon}{repeatIcon}{singleIcon}{artist} || {album} || {title}",
-        "max-length": 120,
+        "format": "{stateIcon} {consumeIcon}{repeatIcon}{singleIcon}{artist} || {title} || {album}",
+        "max-length": 80,
         "format-disconnected": "Disconnected ",
         "format-stopped": "{consumeIcon}{repeatIcon}{singleIcon}Stopped",
         "unknown-tag": "N/A",
@@ -63,33 +62,21 @@
         }
     },
     "tray": {
-        "icon-size": 21,
+        "icon-size": 22,
         "spacing": 10
     },
     "clock": {
-        // "timezone": "America/New_York",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%Y-%m-%d}"
-    },
-    "power-profiles-daemon": {
-      "format": "{icon}",
-      "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
-      "tooltip": true,
-      "format-icons": {
-        "default": "",
-        "performance": "",
-        "balanced": " ",
-        "power-saver": " "
-      }
+        "format-alt": "{:%Y-%m-%d}",
+        "on-click-right": "gnome-calendar",
     },
     "pulseaudio": {
         "scroll-step": 1, // %, can be a float
-        // "format": "{icon} {format_source} {volume}% ",
-        "format": "{icon} {volume}%",
+        "format": "{format_source} {icon} {volume}%",
         "format-bluetooth": "{volume}% {icon} {format_source}",
         "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": " {format_source}",
-        "format-source": "{volume}% ",
+        "format-muted": "{format_source}  mut",
+        "format-source": "",
         "format-source-muted": "",
         "format-icons": {
             "headphone": "",
@@ -98,28 +85,65 @@
             "phone": "",
             "portable": "",
             "car": "",
-            "default": ["", "", " "]
+            "default": ["", "", ""]
         },
-        "on-click": "pavucontrol"
+        "on-click": "hyprctl dispatch exec \"[move 1645 68;size 900 500;float;stayfocused]\" pavucontrol"
     },
     "hyprland/language": {
         "format": "{}",
         "format-en": "EN",
-        "format-ru": "RU"
+        "format-ru": "RU",
+        "on-click": "hyprctl switchxkblayout brian-low-sofle-choc-consumer-control next"
     },
     "hyprland/workspaces": {
         "format": "{icon}",
         "on-click": "activate",
+        "on-scroll-up": "hyprctl dispatch workspace -1",
+        "on-scroll-down": "hyprctl dispatch workspace +1",
         "format-icons": {
-            "1": " ",
-            "2": " ",
-            "3": " ",
-            "4": "󰺵 ",
-            "5": "󰍩 ",
+            "1": "",
+            "2": "",
+            "3": "",
+            "4": "󰺵",
+            "5": "󰍩",
         },
         "persistent-workspaces": {
             "*": 5
         },
         "sort-by-number": true
+    },
+    "group/group-power": {
+    "orientation": "inherit",
+    "drawer": {
+        "transition-duration": 500,
+        "children-class": "not-power",
+        "transition-left-to-right": false,
+    },
+    "modules": [
+        "custom/power", // First element is the "group leader" and won't ever be hidden
+        "custom/quit",
+        "custom/reboot",
+        "custom/sleep",
+    ]
+    },
+    "custom/quit": {
+        "format": "󰗼 Logout",
+        "tooltip": false,
+        "on-click": "hyprctl dispatch exit"
+    },
+    "custom/reboot": {
+        "format": "󰜉 Reboot",
+        "tooltip": false,
+        "on-click": "systemctl reboot"
+    },
+    "custom/power": {
+        "format": " Power",
+        "tooltip": false,
+        "on-click": "systemctl poweroff"
+    },
+    "custom/sleep": {
+        "format": "󰤄 Sleep",
+        "tooltip": false,
+        "on-click": "systemctl suspend"
     }
 }
