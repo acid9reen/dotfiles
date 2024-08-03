@@ -104,12 +104,13 @@ local logger = s(
         level=logging.{},
         format='[%(asctime)s] %(levelname)s [%(name)s:%(lineno)s] %(message)s',
         handlers=[
-            logging.StreamHandler(sys.stderr),
+            {},
         ],
     )
     ]],
     {
       c(1, {t "INFO", t "DEBUG", t "CRITICAL"}),
+      c(2, {t "logging.StreamHandler(sys.stderr)", t "logging.NullHandler()"})
     }
     )
   )
