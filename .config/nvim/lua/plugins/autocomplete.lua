@@ -15,15 +15,16 @@ return {
         ["<C-u>"] = cmp.mapping.scroll_docs(-4), -- Up
         ["<C-d>"] = cmp.mapping.scroll_docs(4), -- Down
         ["<C-Space>"] = cmp.mapping.complete(),
-        ["<CR>"] = cmp.mapping.confirm({
+        ["<C-y>"] = cmp.mapping.confirm({
           behavior = cmp.ConfirmBehavior.Insert,
-          select = false,
+          select = true,
         }),
         ["<Tab>"] = cmp.mapping(function(fallback)
           if cmp.visible() then
             cmp.select_next_item()
-          elseif luasnip.expand_or_jumpable() then
-            luasnip.expand_or_jump()
+          -- DO NOT JUMP ON SNIPPETS WHEN TAB PRESSING
+          -- elseif luasnip.expand_or_jumpable() then
+          --   luasnip.expand_or_jump()
           else
             fallback()
           end
