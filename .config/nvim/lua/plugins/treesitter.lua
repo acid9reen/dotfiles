@@ -12,7 +12,7 @@ return {
                 },
 				sync_install = false,
 				highlight = { enable = true },
-				indent = { disable = { "python" } },
+				indent = { enable = true},
 			})
 		end
 	},
