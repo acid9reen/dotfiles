@@ -102,7 +102,7 @@ local logger = s(
     [[
     logging.basicConfig(
         level=logging.{},
-        format='[%(asctime)s] %(levelname)s [%(name)s:%(lineno)s] %(message)s',
+        format='[%(asctime)s] %(levelname)-8s [%(name)s:%(lineno)s] %(message)s',
         handlers=[
             {},
         ],
