@@ -5,13 +5,15 @@ return {
         "antoinemadec/FixCursorHold.nvim",
         "nvim-treesitter/nvim-treesitter",
         "nvim-neotest/neotest-python",
+        "nvim-neotest/neotest-go",
         "nvim-neotest/nvim-nio",
     },
     config = function ()
         local neotest = require("neotest")
         neotest.setup({
                 adapters = {
-                    require("neotest-python")
+                    require("neotest-python"),
+                    require("neotest-go")
                 }
             })
 
