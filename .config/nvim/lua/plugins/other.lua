@@ -13,7 +13,7 @@ return {
     opts = {},
   },
   { "echasnovski/mini.indentscope", version = false, opts = {} },
-  { "echasnovski/mini.surround", version = false, opts = {} },
+  { "tpope/vim-surround" },
   { "MunifTanjim/nui.nvim", lazy = true },
   { "sheerun/vim-polyglot" },
   { "echasnovski/mini.icons", version = false },
