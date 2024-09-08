@@ -10,9 +10,11 @@ return {
                 python = { "ruff_format" },
                 tex = { "latexindent" },
                 yaml = { "yamlfix" },
+                md = { "mdformat" },
+                go = { "gofmt" }
             },
         })
 
-        vim.keymap.set('n', '<leader>ff', conform.format, { desc = 'Format' })
+        vim.keymap.set({'n', 'v'}, '<leader>ff', conform.format, { desc = 'Format' })
     end
 }
