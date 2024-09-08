@@ -17,4 +17,14 @@ return {
     { "MunifTanjim/nui.nvim",         lazy = true },
     { "sheerun/vim-polyglot" },
     { 'echasnovski/mini.icons', version = false },
+    {
+      'echasnovski/mini.align',
+      version = false,
+      opts = {},
+    },
+    {
+      -- Status loader for lsp
+      "j-hui/fidget.nvim",
+      opts = {},
+    }
 }
