@@ -16,3 +16,9 @@ vim.keymap.set("x", "<leader>y", "\"+y")
 
 vim.keymap.set("n", "<leader>b", "YpVr")
 vim.keymap.set("i", "<C-a>", "<C-6>")
+
+-- Disable inlay hints in insert mode
+-- Enable back on leaving insert mode
+vim.api.nvim_create_augroup("inlay_toggle", { clear=true })
+vim.api.nvim_create_autocmd("InsertEnter", {group="inlay_toggle", callback=function() vim.lsp.inlay_hint.enable(false) end})
+vim.api.nvim_create_autocmd("InsertLeave", {group="inlay_toggle", callback=function() vim.lsp.inlay_hint.enable(true) end})
