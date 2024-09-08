@@ -34,7 +34,7 @@ vim.opt.updatetime = 50
 vim.opt.colorcolumn = "100"
 
 -- Some latex stuff
-vim.g.tex_flavor = 'latex'
+vim.g.tex_flavor = "latex"
 
 vim.g.tex_indent_items = 0
 vim.g.tex_indent_and = 0
@@ -44,10 +44,10 @@ vim.g.tex_no_error = 1
 -- Spellcheck
 vim.opt.spelllang = { "en_us", "ru" }
 vim.api.nvim_create_autocmd("FileType", {
-	pattern = { "html", "markdown", "text", "tex", "rst", "gitcommit" },
-	callback = function()
-		vim.opt_local.spell = true
-	end,
+  pattern = { "html", "markdown", "text", "tex", "rst", "gitcommit" },
+  callback = function()
+    vim.opt_local.spell = true
+  end,
 })
 
 -- Switch languages on ctrl+6

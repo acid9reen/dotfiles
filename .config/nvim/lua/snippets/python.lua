@@ -57,7 +57,7 @@ local amain = s(
       i(1, ""),
       i(3, "main"),
       rep(2),
-      rep(3)
+      rep(3),
     }
   )
 )
@@ -109,11 +109,11 @@ local logger = s(
     )
     ]],
     {
-      c(1, {t "INFO", t "DEBUG", t "CRITICAL"}),
-      c(2, {t "logging.StreamHandler(sys.stderr)", t "logging.NullHandler()"})
+      c(1, { t("INFO"), t("DEBUG"), t("CRITICAL") }),
+      c(2, { t("logging.StreamHandler(sys.stderr)"), t("logging.NullHandler()") }),
     }
-    )
   )
+)
 
 ls.add_snippets("python", {
   amain,
