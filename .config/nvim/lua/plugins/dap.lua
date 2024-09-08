@@ -3,6 +3,7 @@ return {
 		"mfussenegger/nvim-dap",
 		dependencies = {
 			"mfussenegger/nvim-dap-python",
+      "leoluz/nvim-dap-go",
 			"rcarriga/nvim-dap-ui",
 			"theHamsta/nvim-dap-virtual-text",
 			"nvim-neotest/nvim-nio",
@@ -14,9 +15,10 @@ return {
 
 			require("dapui").setup()
 
-            -- Python configuration
-            require("dap-python").setup("/home/ruslan/.venvs/debugpy/bin/python")
-            require('dap-python').test_runner = 'pytest'
+      -- Python configuration
+      require("dap-python").setup("/home/ruslan/.venvs/debugpy/bin/python")
+      require('dap-python').test_runner = 'pytest'
+      require("dap-go").setup()
 
 			vim.keymap.set("n", "<space>b", dap.toggle_breakpoint)
 			vim.keymap.set("n", "<space>gb", dap.run_to_cursor)
