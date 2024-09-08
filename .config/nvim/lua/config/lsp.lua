@@ -60,6 +60,19 @@ lspconfig.jsonls.setup { capabilities = capabilities }
 lspconfig.texlab.setup { capabilities = capabilities, cmd = { 'texlab' } }
 lspconfig.hls.setup { capabilities = capabilities }
 lspconfig.elixirls.setup { capabilities = capabilities }
+lspconfig.gitlab_ci_ls.setup { capabilities = capabilities }
+lspconfig.gopls.setup {
+settings = {
+    gopls = {
+      ["ui.inlayhint.hints"] = {
+        compositeLiteralFields = true,
+        constantValues = true,
+        parameterNames = true
+      },
+    },
+  },
+  capabilities = capabilities,
+}
 
 vim.keymap.set('n', '<space>e', vim.diagnostic.open_float)
 vim.keymap.set('n', '[d', vim.diagnostic.goto_prev)
