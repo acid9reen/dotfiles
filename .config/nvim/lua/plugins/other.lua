@@ -26,4 +26,5 @@ return {
     "j-hui/fidget.nvim",
     opts = {},
   },
+  { "vim-dadbod-completion" },
 }
