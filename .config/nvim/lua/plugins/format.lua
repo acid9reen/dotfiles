@@ -7,7 +7,7 @@ return {
       python = { "ruff_format" },
       tex = { "latexindent" },
       yaml = { "yamlfix" },
-      md = { "mdformat" },
+      markdown = { "mdformat" },
       go = { "gofmt" },
     },
   },

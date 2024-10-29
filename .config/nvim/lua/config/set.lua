@@ -45,9 +45,7 @@ vim.g.tex_no_error = 1
 vim.opt.spelllang = { "en_us", "ru" }
 vim.api.nvim_create_autocmd("FileType", {
   pattern = { "html", "markdown", "text", "tex", "rst", "gitcommit" },
-  callback = function()
-    vim.opt_local.spell = true
-  end,
+  callback = function() vim.opt_local.spell = true end,
 })
 
 -- Switch languages on ctrl+6
@@ -57,3 +55,17 @@ vim.opt.iminsert = 0
 vim.opt.imsearch = 0
 
 vim.g.have_nerd_font = true
+
+vim.filetype.add({
+  pattern = { [".*/hypr/.*%.conf"] = "hyprlang" },
+})
+
+vim.bo.errorformat = [[
+  %-G#\ %.%#
+  %-G%.%#panic:\ %m
+  %Ecan\'t\ load\ package:\ %m
+  %A%\\%%(%[%^:]%\\+:\ %\\)%\\?%f:%l:%c:\ %m
+  %A%\\%%(%[%^:]%\\+:\ %\\)%\\?%f:%l:\ %m
+  %C%*\\s%m
+  %-G%.%#
+]]

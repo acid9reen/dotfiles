@@ -27,4 +27,5 @@ return {
     opts = {},
   },
   { "vim-dadbod-completion" },
+  { "echasnovski/mini.splitjoin", version = false, opts = {} },
 }
