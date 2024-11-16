@@ -26,7 +26,7 @@ lspconfig.basedpyright.setup({
   },
 })
 
-lspconfig.ruff_lsp.setup({ capabilities = capabilities })
+lspconfig.ruff.setup({ capabilities = capabilities })
 lspconfig.docker_compose_language_service.setup({ capabilities = capabilities, filetypes = { "yaml.docker-compose" } })
 lspconfig.dockerls.setup({ capabilities = capabilities })
 lspconfig.yamlls.setup({ capabilities = capabilities })

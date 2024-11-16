@@ -1,15 +1,13 @@
 return {
   "hrsh7th/nvim-cmp",
-  dependencies = { "L3MON4D3/LuaSnip" },
+  dependencies = { "L3MON4D3/LuaSnip", "milanglacier/minuet-ai.nvim" },
   config = function()
     local luasnip = require("luasnip")
     local cmp = require("cmp")
 
     cmp.setup({
       snippet = {
-        expand = function(args)
-          luasnip.lsp_expand(args.body)
-        end,
+        expand = function(args) luasnip.lsp_expand(args.body) end,
       },
       mapping = cmp.mapping.preset.insert({
         ["<C-u>"] = cmp.mapping.scroll_docs(-4), -- Up
@@ -40,10 +38,14 @@ return {
         end, { "i", "s" }),
       }),
       sources = {
+        { name = "minuet" },
         { name = "nvim_lsp" },
         { name = "luasnip" },
         { name = "buffer" },
         { name = "path" },
+      },
+      performance = {
+        fetching_timeout = 2000,
       },
     })
 
