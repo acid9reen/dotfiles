@@ -1,6 +1,7 @@
 return {
   "danymat/neogen",
-  dependencies = "nvim-treesitter/nvim-treesitter",
+  lazy = true,
+  cmd = { "Neogen" },
   opts = {
     snippet_engine = "luasnip",
     languages = {

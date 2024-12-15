@@ -1,17 +1,24 @@
 return {
   {
     "ThePrimeagen/harpoon",
-    config = function()
-      local mark = require("harpoon.mark")
-      local ui = require("harpoon.ui")
-
-      vim.keymap.set("n", "<leader>a", mark.add_file, { desc = "Add file to Harpoon" })
-      vim.keymap.set("n", "<C-e>", ui.toggle_quick_menu, { desc = "Harpoon menu" })
-
-      vim.keymap.set("n", "<C-j>", function() ui.nav_file(1) end)
-      vim.keymap.set("n", "<C-k>", function() ui.nav_file(2) end)
-      vim.keymap.set("n", "<C-l>", function() ui.nav_file(3) end)
-      vim.keymap.set("n", "<C-;>", function() ui.nav_file(4) end)
-    end,
+    branch = "harpoon2",
+    lazy = true,
+    config = true,
+    keys = {
+      { "<leader>a", function() require("harpoon"):list():add() end, mode = { "n" }, desc = "Add file to Harpoon" },
+      {
+        "<C-e>",
+        function()
+          local harpoon = require("harpoon")
+          harpoon.ui:toggle_quick_menu(harpoon:list())
+        end,
+        mode = { "n" },
+        desc = "Harpoon menu",
+      },
+      { "<C-j>", function() require("harpoon"):list():select(1) end, mode = { "n" } },
+      { "<C-k>", function() require("harpoon"):list():select(2) end, mode = { "n" } },
+      { "<C-l>", function() require("harpoon"):list():select(3) end, mode = { "n" } },
+      { "<C-;>", function() require("harpoon"):list():select(4) end, mode = { "n" } },
+    },
   },
 }

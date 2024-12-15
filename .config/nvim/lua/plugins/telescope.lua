@@ -1,15 +1,34 @@
 return {
   {
+    "nvim-telescope/telescope-fzf-native.nvim",
+    lazy = true,
+    build = "cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release",
+  },
+  {
     "nvim-telescope/telescope.nvim",
-    dependencies = { "nvim-lua/plenary.nvim" },
     config = function()
-      local builtin = require("telescope.builtin")
+      local telescope = require("telescope")
 
-      vim.keymap.set("n", "<leader>pf", builtin.find_files, { desc = "Find files" })
-      vim.keymap.set("n", "<C-p>", builtin.git_files, { desc = "Git files" })
-      vim.keymap.set("n", "<leader>ps", builtin.live_grep, { desc = "Find in files" })
-      vim.keymap.set("n", "<leader>fb", builtin.buffers, { desc = "Find buffer" })
-      vim.keymap.set("n", "<leader>fh", builtin.help_tags, { desc = "Find help" })
+      telescope.setup({
+        extensions = {
+          fzf = {
+            fuzzy = true,
+            override_generic_sorter = true,
+            override_file_sorter = true,
+            case_mode = "smart_case",
+          },
+        },
+      })
+
+      telescope.load_extension("fzf")
     end,
+    lazy = true,
+    keys = {
+      { "<leader>pf", "<cmd>Telescope find_files<cr>", mode = { "n" }, desc = "Find files" },
+      { "<C-p>", "<cmd>Telescope git_files<cr>", mode = { "n" }, desc = "Git files" },
+      { "<leader>ps", "<cmd>Telescope live_grep<cr>", mode = { "n" }, desc = "Find in files" },
+      { "<leader>fb", "<cmd>Telescope buffers<cr>", mode = { "n" }, desc = "Find buffer" },
+      { "<leader>fh", "<cmd>Telescope help_tags<cr>", mode = { "n" }, desc = "Find help" },
+    },
   },
 }

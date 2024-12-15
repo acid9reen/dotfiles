@@ -1,4 +1,6 @@
 return {
   "MeanderingProgrammer/render-markdown.nvim",
-  opts = {},
+  ft = { "markdown" },
+  lazy = true,
+  config = true,
 }

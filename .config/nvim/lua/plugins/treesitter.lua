@@ -2,18 +2,20 @@ return {
   {
     "nvim-treesitter/nvim-treesitter",
     build = ":TSUpdate",
-    config = function()
-      local configs = require("nvim-treesitter.configs")
-
-      configs.setup({
-        ensure_installed = {
-          "python",
-          "lua",
-        },
-        sync_install = false,
-        highlight = { enable = true },
-        indent = { enable = true },
-      })
-    end,
+    event = "BufEnter",
+    lazy = true,
+    main = "nvim-treesitter.configs",
+    opts = {
+      ensure_installed = {
+        "go",
+        "lua",
+        "markdown",
+        "python",
+        "sql",
+      },
+      sync_install = false,
+      highlight = { enable = true },
+      indent = { enable = true },
+    },
   },
 }

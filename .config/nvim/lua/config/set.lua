@@ -60,6 +60,7 @@ vim.filetype.add({
   pattern = { [".*/hypr/.*%.conf"] = "hyprlang" },
 })
 
+-- Populate quickfix list on go compiler errors
 vim.bo.errorformat = [[
   %-G#\ %.%#
   %-G%.%#panic:\ %m

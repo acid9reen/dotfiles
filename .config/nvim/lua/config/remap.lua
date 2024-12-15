@@ -27,13 +27,9 @@ vim.keymap.set("i", "<C-a>", "<C-6>")
 vim.api.nvim_create_augroup("inlay_toggle", { clear = true })
 vim.api.nvim_create_autocmd("InsertEnter", {
   group = "inlay_toggle",
-  callback = function()
-    vim.lsp.inlay_hint.enable(false)
-  end,
+  callback = function() vim.lsp.inlay_hint.enable(false) end,
 })
 vim.api.nvim_create_autocmd("InsertLeave", {
   group = "inlay_toggle",
-  callback = function()
-    vim.lsp.inlay_hint.enable(true)
-  end,
+  callback = function() vim.lsp.inlay_hint.enable(true) end,
 })

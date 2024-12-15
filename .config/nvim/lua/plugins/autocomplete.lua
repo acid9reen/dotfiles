@@ -1,11 +1,19 @@
 return {
   "hrsh7th/nvim-cmp",
-  dependencies = { "L3MON4D3/LuaSnip", "milanglacier/minuet-ai.nvim" },
+  dependencies = {
+    "Snikimonkd/cmp-go-pkgs",
+    "hrsh7th/cmp-buffer",
+    "hrsh7th/cmp-cmdline",
+    "hrsh7th/cmp-nvim-lsp",
+    "hrsh7th/cmp-path",
+    "saadparwaiz1/cmp_luasnip",
+  },
   config = function()
     local luasnip = require("luasnip")
     local cmp = require("cmp")
 
     cmp.setup({
+      matching = { disallow_symbol_nonprefix_matching = false },
       snippet = {
         expand = function(args) luasnip.lsp_expand(args.body) end,
       },
@@ -20,9 +28,6 @@ return {
         ["<Tab>"] = cmp.mapping(function(fallback)
           if cmp.visible() then
             cmp.select_next_item()
-          -- DO NOT JUMP ON SNIPPETS WHEN TAB PRESSING
-          -- elseif luasnip.expand_or_jumpable() then
-          --   luasnip.expand_or_jump()
           else
             fallback()
           end
@@ -38,14 +43,11 @@ return {
         end, { "i", "s" }),
       }),
       sources = {
-        { name = "minuet" },
         { name = "nvim_lsp" },
         { name = "luasnip" },
+        { name = "go_pkgs" },
         { name = "buffer" },
         { name = "path" },
-      },
-      performance = {
-        fetching_timeout = 2000,
       },
     })
 

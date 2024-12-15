@@ -2,6 +2,10 @@ return {
   {
     "echasnovski/mini.comment",
     version = false,
-    opts = {},
+    lazy = true,
+    config = true,
+    keys = {
+      { "gc", mode = { "n", "v" } },
+    },
   },
 }

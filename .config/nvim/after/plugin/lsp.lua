@@ -11,7 +11,7 @@ lspconfig.basedpyright.setup({
       "makefile",
       "Makefile",
     }
-    return util.root_pattern(unpack(root_files))(fname) or util.find_git_ancestor(fname) or util.path.dirname(fname)
+    return util.root_pattern(unpack(root_files))(fname) or util.find_git_ancestor(fname) or vim.fs.dirname(fname)
   end,
   capabilities = capabilities,
   settings = {
@@ -34,9 +34,7 @@ lspconfig.taplo.setup({ capabilities = capabilities })
 lspconfig.lua_ls.setup({
   on_init = function(client)
     local path = client.workspace_folders[1].name
-    if vim.loop.fs_stat(path .. "/.luarc.json") or vim.loop.fs_stat(path .. "/.luarc.jsonc") then
-      return
-    end
+    if vim.loop.fs_stat(path .. "/.luarc.json") or vim.loop.fs_stat(path .. "/.luarc.jsonc") then return end
 
     client.config.settings.Lua = vim.tbl_deep_extend("force", client.config.settings.Lua, {
       runtime = {
@@ -64,11 +62,37 @@ lspconfig.gitlab_ci_ls.setup({ capabilities = capabilities })
 lspconfig.gopls.setup({
   settings = {
     gopls = {
-      ["ui.inlayhint.hints"] = {
-        compositeLiteralFields = true,
-        constantValues = true,
-        parameterNames = true,
+      gofumpt = true,
+      codelenses = {
+        gc_details = false,
+        generate = true,
+        regenerate_cgo = true,
+        run_govulncheck = true,
+        test = true,
+        tidy = true,
+        upgrade_dependency = true,
+        vendor = true,
       },
+      hints = {
+        compositeLiteralFields = true,
+        compositeLiteralTypes = true,
+        constantValues = true,
+        functionTypeParameters = true,
+        parameterNames = true,
+        rangeVariableTypes = true,
+      },
+      analyses = {
+        fieldalignment = true,
+        nilness = true,
+        unusedparams = true,
+        unusedwrite = true,
+        useany = true,
+      },
+      usePlaceholders = true,
+      completeUnimported = true,
+      staticcheck = true,
+      directoryFilters = { "-.git", "-.vscode", "-.idea", "-.vscode-test", "-node_modules" },
+      semanticTokens = true,
     },
   },
   capabilities = capabilities,
@@ -83,16 +107,30 @@ vim.api.nvim_create_autocmd("LspAttach", {
   group = vim.api.nvim_create_augroup("UserLspConfig", {}),
   callback = function(ev)
     local client = vim.lsp.get_client_by_id(ev.data.client_id)
+    if client == nil then return end
 
-    if client.supports_method("textDocument/inlayHint") then
-      vim.lsp.inlay_hint.enable()
+    -- Enable lsp inlay hints if supported
+    if client.supports_method("textDocument/inlayHint") then vim.lsp.inlay_hint.enable() end
+
+    if client.name == "gopls" and not client.server_capabilities.semanticTokensProvider then
+      local semantic = client.config.capabilities.textDocument.semanticTokens
+      if semantic == nil then return end
+
+      client.server_capabilities.semanticTokensProvider = {
+        full = true,
+        legend = { tokenModifiers = semantic.tokenModifiers, tokenTypes = semantic.tokenTypes },
+        range = true,
+      }
     end
+
+    client.server_capabilities.semanticTokensProvider = vim.NIL
 
     vim.keymap.set("n", "gD", vim.lsp.buf.declaration, { buffer = ev.buf, desc = "Go to declaration" })
     vim.keymap.set("n", "gd", vim.lsp.buf.definition, { buffer = ev.buf, desc = "Go to definition" })
     vim.keymap.set("n", "K", vim.lsp.buf.hover, { buffer = ev.buf, desc = "Hover" })
     vim.keymap.set("n", "gi", vim.lsp.buf.implementation, { buffer = ev.buf, desc = "Go to implemetation" })
     vim.keymap.set("n", "<leader>k", vim.lsp.buf.signature_help, { buffer = ev.buf, desc = "Signature help" })
+    vim.keymap.set("i", "<C-k>", vim.lsp.buf.signature_help, { buffer = ev.buf, desc = "Signature help" })
     vim.keymap.set(
       "n",
       "<space>wa",
@@ -105,9 +143,12 @@ vim.api.nvim_create_autocmd("LspAttach", {
       vim.lsp.buf.remove_workspace_folder,
       { buffer = ev.buf, desc = "Remove workspace folder" }
     )
-    vim.keymap.set("n", "<space>wl", function()
-      print(vim.inspect(vim.lsp.buf.list_workspace_folders()))
-    end, { buffer = ev.buf, desc = "List workspace folders" })
+    vim.keymap.set(
+      "n",
+      "<space>wl",
+      function() print(vim.inspect(vim.lsp.buf.list_workspace_folders())) end,
+      { buffer = ev.buf, desc = "List workspace folders" }
+    )
     vim.keymap.set("n", "<space>D", vim.lsp.buf.type_definition, { buffer = ev.buf, desc = "Type definition" })
     vim.keymap.set("n", "<space>rn", vim.lsp.buf.rename, { buffer = ev.buf, desc = "Rename symbol" })
     vim.keymap.set({ "n", "v" }, "<space>ca", vim.lsp.buf.code_action, { buffer = ev.buf, desc = "Code action" })
@@ -116,14 +157,14 @@ vim.api.nvim_create_autocmd("LspAttach", {
 })
 
 -- Hyprlang LSP
-vim.api.nvim_create_autocmd({'BufEnter', 'BufWinEnter'}, {
-		pattern = {"*.hl", "hypr*.conf"},
-		callback = function(event)
-  print(string.format("starting hyprls for %s", vim.inspect(event)))
-  vim.lsp.start({
-    name = "hyprlang",
-    cmd = { "hyprls" },
-    root_dir = vim.fn.getcwd(),
-  })
-		end
+vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
+  pattern = { "*.hl", "hypr*.conf" },
+  callback = function(event)
+    print(string.format("starting hyprls for %s", vim.inspect(event)))
+    vim.lsp.start({
+      name = "hyprlang",
+      cmd = { "hyprls" },
+      root_dir = vim.fn.getcwd(),
+    })
+  end,
 })

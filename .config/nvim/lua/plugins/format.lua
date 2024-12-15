@@ -1,14 +1,15 @@
 return {
   "stevearc/conform.nvim",
+  lazy = true,
   opts = {
     formatters_by_ft = {
+      go = { "goimports", "gofumpt" },
       json = { "jq" },
       lua = { "stylua" },
+      markdown = { "mdformat" },
       python = { "ruff_format" },
       tex = { "latexindent" },
       yaml = { "yamlfix" },
-      markdown = { "mdformat" },
-      go = { "gofmt" },
     },
   },
   keys = {
