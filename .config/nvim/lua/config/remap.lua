@@ -6,7 +6,7 @@ vim.keymap.set("n", "N", "Nzzzv")
 
 vim.keymap.set(
   "n",
-  "<leader>s",
+  "<leader>ss",
   [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]],
   { desc = "Find word under cursor" }
 )
@@ -19,8 +19,8 @@ vim.keymap.set("x", "<leader>P", '"_dP')
 vim.keymap.set("x", "<leader>y", '"+y')
 -- vim.keymap.set("x", "<leader>p", "\"+p")
 
-vim.keymap.set("n", "<leader>b", "YpVr")
-vim.keymap.set("i", "<C-a>", "<C-6>")
+vim.keymap.set("n", "<leader>bd", ":up | %bd | e# <CR>", { desc = "Close all buffers except current one" })
+vim.keymap.set("i", "<C-a>", "<C-6>", { desc = "Change language inside neovim" })
 
 -- Disable inlay hints in insert mode
 -- Enable back on leaving insert mode
@@ -29,7 +29,31 @@ vim.api.nvim_create_autocmd("InsertEnter", {
   group = "inlay_toggle",
   callback = function() vim.lsp.inlay_hint.enable(false) end,
 })
+
 vim.api.nvim_create_autocmd("InsertLeave", {
   group = "inlay_toggle",
   callback = function() vim.lsp.inlay_hint.enable(true) end,
 })
+
+vim.api.nvim_create_autocmd("TextYankPost", {
+  desc = "Highlight when yanking (copying) text",
+  group = vim.api.nvim_create_augroup("highlight-yank", { clear = true }),
+  callback = function() vim.highlight.on_yank() end,
+})
+
+vim.api.nvim_create_autocmd("TermOpen", {
+  desc = "Highlight when yanking (copying) text",
+  group = vim.api.nvim_create_augroup("custom-term-open", { clear = true }),
+  callback = function()
+    vim.opt.number = false
+    vim.opt.relativenumber = false
+  end,
+})
+
+vim.keymap.set("n", "<space>st", function()
+  vim.cmd.vnew()
+  vim.cmd.term()
+  vim.cmd.wincmd("J")
+  vim.api.nvim_win_set_height(0, 15)
+  vim.cmd(":startinsert")
+end)
