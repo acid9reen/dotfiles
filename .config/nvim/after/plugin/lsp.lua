@@ -11,7 +11,9 @@ lspconfig.basedpyright.setup({
       "makefile",
       "Makefile",
     }
-    return util.root_pattern(unpack(root_files))(fname) or util.find_git_ancestor(fname) or vim.fs.dirname(fname)
+    return util.root_pattern(unpack(root_files))(fname)
+      or vim.fs.dirname(vim.fs.find(".git", { path = fname, upward = true })[1])
+      or vim.fs.dirname(fname)
   end,
   capabilities = capabilities,
   settings = {
@@ -81,13 +83,6 @@ lspconfig.gopls.setup({
         parameterNames = true,
         rangeVariableTypes = true,
       },
-      analyses = {
-        fieldalignment = true,
-        nilness = true,
-        unusedparams = true,
-        unusedwrite = true,
-        useany = true,
-      },
       usePlaceholders = true,
       completeUnimported = true,
       staticcheck = true,
@@ -123,7 +118,7 @@ vim.api.nvim_create_autocmd("LspAttach", {
       }
     end
 
-    client.server_capabilities.semanticTokensProvider = vim.NIL
+    client.server_capabilities.semanticTokensProvider = nil
 
     vim.keymap.set("n", "gD", vim.lsp.buf.declaration, { buffer = ev.buf, desc = "Go to declaration" })
     vim.keymap.set("n", "gd", vim.lsp.buf.definition, { buffer = ev.buf, desc = "Go to definition" })
