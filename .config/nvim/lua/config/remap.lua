@@ -57,3 +57,6 @@ vim.keymap.set("n", "<space>st", function()
   vim.api.nvim_win_set_height(0, 15)
   vim.cmd(":startinsert")
 end)
+
+vim.keymap.set("n", "<A-j>", "<Cmd> cn <CR>", { desc = "Go to next item in quickfix list" })
+vim.keymap.set("n", "<A-k>", "<Cmd> cp <CR>", { desc = "Go to previous item in quickfix list" })
