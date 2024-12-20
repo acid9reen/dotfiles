@@ -9,9 +9,13 @@ return {
       ensure_installed = {
         "go",
         "lua",
+        "make",
         "markdown",
         "python",
+        "rst",
         "sql",
+        "toml",
+        "yaml",
       },
       sync_install = false,
       highlight = { enable = true },
