@@ -70,3 +70,9 @@ vim.bo.errorformat = [[
   %C%*\\s%m
   %-G%.%#
 ]]
+
+-- Folding
+vim.opt.foldcolumn = "auto:1"
+vim.opt.foldlevel = 20
+vim.opt.foldmethod = "expr"
+vim.opt.foldexpr = "nvim_treesitter#foldexpr()"

@@ -60,3 +60,6 @@ end)
 
 vim.keymap.set("n", "<A-j>", "<Cmd> cn <CR>", { desc = "Go to next item in quickfix list" })
 vim.keymap.set("n", "<A-k>", "<Cmd> cp <CR>", { desc = "Go to previous item in quickfix list" })
+
+-- Folding
+vim.keymap.set("n", "+", "za", { desc = "Toggle folding" })
