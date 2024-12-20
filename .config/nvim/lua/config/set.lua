@@ -76,3 +76,5 @@ vim.opt.foldcolumn = "auto:1"
 vim.opt.foldlevel = 20
 vim.opt.foldmethod = "expr"
 vim.opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
+-- Do not replace first line of the fold with greyed out text
+vim.opt.foldtext = ""
