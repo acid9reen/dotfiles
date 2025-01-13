@@ -78,3 +78,15 @@ vim.opt.foldmethod = "expr"
 vim.opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
 -- Do not replace first line of the fold with greyed out text
 vim.opt.foldtext = ""
+
+-- Invisible characters
+vim.opt.list = true
+local space = "·"
+vim.opt.listchars:append({
+  eol = "$",
+  tab = ">-",
+  multispace = space,
+  lead = space,
+  trail = space,
+  nbsp = space,
+})
