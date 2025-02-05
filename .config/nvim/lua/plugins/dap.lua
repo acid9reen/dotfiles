@@ -1,42 +1,53 @@
-return {}
--- return {
---   {
---     "mfussenegger/nvim-dap",
---     dependencies = {
---       "mfussenegger/nvim-dap-python",
---       "leoluz/nvim-dap-go",
---       "rcarriga/nvim-dap-ui",
---       "theHamsta/nvim-dap-virtual-text",
---       "williamboman/mason.nvim",
---     },
---     config = function()
---       local dap = require("dap")
---       local ui = require("dapui")
---
---       require("dapui").setup()
---
---       -- Python configuration
---       require("dap-python").setup("/home/ruslan/.venvs/debugpy/bin/python")
---       require("dap-python").test_runner = "pytest"
---       require("dap-go").setup()
---
---       vim.keymap.set("n", "<space>b", dap.toggle_breakpoint)
---       vim.keymap.set("n", "<space>gb", dap.run_to_cursor)
---
---       -- Eval var under cursor
---       vim.keymap.set("n", "<space>?", function() require("dapui").eval(nil, { enter = true }) end)
---
---       vim.keymap.set("n", "<F1>", dap.continue)
---       vim.keymap.set("n", "<F2>", dap.step_into)
---       vim.keymap.set("n", "<F3>", dap.step_over)
---       vim.keymap.set("n", "<F4>", dap.step_out)
---       vim.keymap.set("n", "<F5>", dap.step_back)
---       vim.keymap.set("n", "<F11>", dap.restart)
---
---       dap.listeners.before.attach.dapui_config = function() ui.open() end
---       dap.listeners.before.launch.dapui_config = function() ui.open() end
---       dap.listeners.before.event_terminated.dapui_config = function() ui.close() end
---       dap.listeners.before.event_exited.dapui_config = function() ui.close() end
---     end,
---   },
--- }
+return {
+  {
+    "mfussenegger/nvim-dap",
+    dependencies = {
+      "mfussenegger/nvim-dap-python",
+      "leoluz/nvim-dap-go",
+      "rcarriga/nvim-dap-ui",
+      "theHamsta/nvim-dap-virtual-text",
+      "williamboman/mason.nvim",
+    },
+    config = function()
+      local dap = require("dap")
+      local ui = require("dapui")
+
+      require("dapui").setup()
+
+      -- Python configuration
+      require("dap-python").setup("/home/ruslan/.venvs/debugpy/bin/python")
+      require("dap-python").test_runner = "pytest"
+      require("dap-go").setup({
+        dap_configurations = {
+          {
+            type = "go",
+            name = "Debug (Build Flags)",
+            request = "launch",
+            program = "${file}",
+            buildFlags = require("dap-go").get_build_flags,
+          },
+        },
+      })
+
+      vim.keymap.set("n", "<space>b", dap.toggle_breakpoint)
+      vim.keymap.set("n", "<space>gb", dap.run_to_cursor)
+
+      -- Eval var under cursor
+      vim.keymap.set("n", "<space>?", function() require("dapui").eval(nil, { enter = true }) end)
+
+      vim.keymap.set("n", "<F1>", dap.continue)
+      vim.keymap.set("n", "<F2>", dap.step_into)
+      vim.keymap.set("n", "<F3>", dap.step_over)
+      vim.keymap.set("n", "<F4>", dap.step_out)
+      vim.keymap.set("n", "<F5>", dap.step_back)
+      vim.keymap.set("n", "<F6>", dap.up)
+      vim.keymap.set("n", "<F7>", dap.down)
+      vim.keymap.set("n", "<F11>", dap.restart)
+
+      dap.listeners.before.attach.dapui_config = function() ui.open() end
+      dap.listeners.before.launch.dapui_config = function() ui.open() end
+      dap.listeners.before.event_terminated.dapui_config = function() ui.close() end
+      dap.listeners.before.event_exited.dapui_config = function() ui.close() end
+    end,
+  },
+}

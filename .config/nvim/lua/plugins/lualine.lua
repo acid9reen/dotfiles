@@ -3,7 +3,18 @@ return {
     "nvim-lualine/lualine.nvim",
     dependencies = { "nvim-tree/nvim-web-devicons" },
     opts = {
-      options = { theme = "gruvbox", globalstatus = true },
+      options = {
+        theme = "gruvbox",
+        globalstatus = true,
+      },
+      extensions = {
+        "fugitive",
+        "mason",
+        "nvim-dap-ui",
+        "oil",
+        "quickfix",
+        "symbols-outline",
+      },
       sections = {
         lualine_a = { "mode" },
         lualine_b = {

@@ -3,3 +3,4 @@ require("config.remap")
 
 require("config.lazy")
 require("snippets.python")
+require("snippets.golang")
