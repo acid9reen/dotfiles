@@ -20,6 +20,5 @@ return {
     ft_blocklist = { "markdown" },
     config = true,
   },
-  { "tpope/vim-surround" },
   { "MunifTanjim/nui.nvim", lazy = true },
 }
