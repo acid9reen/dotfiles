@@ -24,6 +24,8 @@ return {
       sql = { "sql_formatter" },
       tex = { "latexindent" },
       yaml = { "yamlfix" },
+      html = { "djlint" },
+      cpp = { "clang-format" },
     },
   },
   keys = {

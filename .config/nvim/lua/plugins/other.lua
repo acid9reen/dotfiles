@@ -21,4 +21,9 @@ return {
     config = true,
   },
   { "MunifTanjim/nui.nvim", lazy = true },
+  { "mattn/emmet-vim" },
+  {
+    "jasonwoodland/vim-html-indent",
+    init = function() vim.g.user_emmet_leader_key = "<C-Z>" end,
+  },
 }

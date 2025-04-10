@@ -92,6 +92,7 @@ lspconfig.gopls.setup({
   },
   capabilities = capabilities,
 })
+lspconfig.clangd.setup({ capabilities = capabilities })
 
 vim.keymap.set("n", "<space>e", vim.diagnostic.open_float)
 vim.keymap.set("n", "[d", vim.diagnostic.goto_prev)
@@ -118,7 +119,7 @@ vim.api.nvim_create_autocmd("LspAttach", {
       }
     end
 
-    client.server_capabilities.semanticTokensProvider = nil
+    -- client.server_capabilities.semanticTokensProvider = nil
 
     vim.keymap.set("n", "gD", vim.lsp.buf.declaration, { buffer = ev.buf, desc = "Go to declaration" })
     vim.keymap.set("n", "gd", vim.lsp.buf.definition, { buffer = ev.buf, desc = "Go to definition" })

@@ -63,3 +63,6 @@ vim.keymap.set("n", "<A-k>", "<Cmd> cp <CR>", { desc = "Go to previous item in q
 
 -- Folding
 vim.keymap.set("n", "+", "za", { desc = "Toggle folding" })
+
+-- Visually select pasted text
+vim.keymap.set("n", "<leader>vp", "`[v`]", { desc = "Visually select pasted text" })
