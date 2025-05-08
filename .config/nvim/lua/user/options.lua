@@ -1,12 +1,10 @@
 local options = {
   backup = false,
-  colorcolumn = "100",
   completeopt = { "menuone", "noselect" },
   expandtab = true,
   guicursor = "n-v-c-sm:block,i-ci-ve:ver25,r-cr-o:hor20",
   hlsearch = false,
   incsearch = true,
-  keymap = "russian-jcukenwin",
   nu = true,
   relativenumber = true,
   scrolloff = 8,
@@ -47,5 +45,6 @@ vim.cmd("set whichwrap+=<,>,[,],h,l")
 
 -- Reset to default keymap
 -- Need to be done after other configuration options due side effect of keymap setting
+vim.opt.keymap = "russian-jcukenwin"
 vim.opt.iminsert = 0
 vim.opt.imsearch = 0
