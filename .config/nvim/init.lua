@@ -1,5 +1,9 @@
-require("config.set")
-require("config.remap")
+vim.g.mapleader = " "
+
+require("user.options")
+require("user.filetypes")
+require("user.keymaps")
+require("user.aucmds")
 
 require("config.lazy")
 require("snippets.python")

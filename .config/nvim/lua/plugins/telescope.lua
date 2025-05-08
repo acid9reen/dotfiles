@@ -27,7 +27,7 @@ return {
 
       telescope.load_extension("fzf")
     end,
-    lazy = true,
+    lazy = false,
     keys = {
       { "<leader>pf", "<cmd>Telescope find_files<cr>", mode = { "n" }, desc = "Find files" },
       { "<C-p>", "<cmd>Telescope git_files<cr>", mode = { "n" }, desc = "Git files" },

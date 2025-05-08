@@ -12,30 +12,4 @@ return {
       if ls.choice_active() then ls.change_choice(1) end
     end, { silent = true })
   end,
-  -- local types = require("luasnip.util.types")
-  --
-  -- ls.setup({
-  --   history = true,
-  --   update_events = { "TextChanged", "TextChangedI" },
-  --   ext_opts = {
-  --     [types.choiceNode] = {
-  --       active = {
-  --         virt_text = { { "●", "GruvboxOrange" } },
-  --         hl_mode = "combine",
-  --       },
-  --       passive = {
-  --         hl_group = "hl-Substitute",
-  --       },
-  --     },
-  --     [types.insertNode] = {
-  --       active = {
-  --         virt_text = { { "●", "GruvboxAqua" } },
-  --         hl_mode = "combine",
-  --       },
-  --       passive = {
-  --         hl_group = "GruvboxAqua",
-  --       },
-  --     },
-  --   },
-  -- })
 }

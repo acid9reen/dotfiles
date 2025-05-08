@@ -5,6 +5,6 @@ return {
     lazy = true,
     cmd = { "KittyScrollbackGenerateKittens", "KittyScrollbackCheckHealth" },
     event = { "User KittyScrollbackLaunch" },
-    opts = {},
+    config = true,
   },
 }

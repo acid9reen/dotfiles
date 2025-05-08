@@ -4,6 +4,6 @@ return {
   config = true,
   lazy = true,
   keys = {
-    { "gS" },
+    { "gS", desc = "Split by comma in braces" },
   },
 }

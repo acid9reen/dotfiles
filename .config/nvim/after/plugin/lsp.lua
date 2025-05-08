@@ -93,11 +93,55 @@ lspconfig.gopls.setup({
   capabilities = capabilities,
 })
 lspconfig.clangd.setup({ capabilities = capabilities })
-
-vim.keymap.set("n", "<space>e", vim.diagnostic.open_float)
-vim.keymap.set("n", "[d", vim.diagnostic.goto_prev)
-vim.keymap.set("n", "]d", vim.diagnostic.goto_next)
-vim.keymap.set("n", "<space>q", vim.diagnostic.setloclist)
+lspconfig.htmx.setup({
+  capabilities = capabilities,
+  filetypes = {
+    "aspnetcorerazor",
+    "astro",
+    "astro-markdown",
+    "blade",
+    "clojure",
+    "django-html",
+    "htmldjango",
+    "edge",
+    "eelixir",
+    "elixir",
+    "ejs",
+    "erb",
+    "eruby",
+    "gohtml",
+    "gotmpl",
+    "gohtmltmpl",
+    "haml",
+    "handlebars",
+    "hbs",
+    "html",
+    "htmlangular",
+    "html-eex",
+    "heex",
+    "jade",
+    "leaf",
+    "liquid",
+    "markdown",
+    "mdx",
+    "mustache",
+    "njk",
+    "nunjucks",
+    "php",
+    "razor",
+    "slim",
+    "twig",
+    "javascript",
+    "javascriptreact",
+    "reason",
+    "rescript",
+    "typescript",
+    "typescriptreact",
+    "vue",
+    "svelte",
+    "templ",
+  },
+})
 
 vim.api.nvim_create_autocmd("LspAttach", {
   group = vim.api.nvim_create_augroup("UserLspConfig", {}),
@@ -105,24 +149,10 @@ vim.api.nvim_create_autocmd("LspAttach", {
     local client = vim.lsp.get_client_by_id(ev.data.client_id)
     if client == nil then return end
 
-    -- Enable lsp inlay hints if supported
-    if client.supports_method("textDocument/inlayHint") then vim.lsp.inlay_hint.enable() end
-
-    if client.name == "gopls" and not client.server_capabilities.semanticTokensProvider then
-      local semantic = client.config.capabilities.textDocument.semanticTokens
-      if semantic == nil then return end
-
-      client.server_capabilities.semanticTokensProvider = {
-        full = true,
-        legend = { tokenModifiers = semantic.tokenModifiers, tokenTypes = semantic.tokenTypes },
-        range = true,
-      }
-    end
-
-    -- client.server_capabilities.semanticTokensProvider = nil
+    local ts = require("telescope.builtin")
 
     vim.keymap.set("n", "gD", vim.lsp.buf.declaration, { buffer = ev.buf, desc = "Go to declaration" })
-    vim.keymap.set("n", "gd", vim.lsp.buf.definition, { buffer = ev.buf, desc = "Go to definition" })
+    vim.keymap.set("n", "gd", ts.lsp_definitions, { buffer = ev.buf, desc = "Go to definition" })
     vim.keymap.set("n", "K", vim.lsp.buf.hover, { buffer = ev.buf, desc = "Hover" })
     vim.keymap.set("n", "gi", vim.lsp.buf.implementation, { buffer = ev.buf, desc = "Go to implemetation" })
     vim.keymap.set("n", "<leader>k", vim.lsp.buf.signature_help, { buffer = ev.buf, desc = "Signature help" })
@@ -148,15 +178,14 @@ vim.api.nvim_create_autocmd("LspAttach", {
     vim.keymap.set("n", "<space>D", vim.lsp.buf.type_definition, { buffer = ev.buf, desc = "Type definition" })
     vim.keymap.set("n", "<space>rn", vim.lsp.buf.rename, { buffer = ev.buf, desc = "Rename symbol" })
     vim.keymap.set({ "n", "v" }, "<space>ca", vim.lsp.buf.code_action, { buffer = ev.buf, desc = "Code action" })
-    vim.keymap.set("n", "gr", require("telescope.builtin").lsp_references, { desc = "Go to references" })
+    vim.keymap.set("n", "grr", ts.lsp_references, { desc = "Go to references" })
   end,
 })
 
 -- Hyprlang LSP
 vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
   pattern = { "*.hl", "hypr*.conf" },
-  callback = function(event)
-    print(string.format("starting hyprls for %s", vim.inspect(event)))
+  callback = function(_)
     vim.lsp.start({
       name = "hyprlang",
       cmd = { "hyprls" },
