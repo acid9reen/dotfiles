@@ -143,6 +143,23 @@ lspconfig.htmx.setup({
   },
 })
 
+lspconfig.emmet_language_server.setup({
+  filetypes = {
+    "css",
+    "eruby",
+    "gotmpl",
+    "html",
+    "javascript",
+    "javascriptreact",
+    "jinja",
+    "less",
+    "pug",
+    "sass",
+    "scss",
+    "typescriptreact",
+  },
+  capabilities = capabilities,
+})
 vim.api.nvim_create_autocmd("LspAttach", {
   group = vim.api.nvim_create_augroup("UserLspConfig", {}),
   callback = function(ev)
@@ -154,7 +171,7 @@ vim.api.nvim_create_autocmd("LspAttach", {
     vim.keymap.set("n", "gD", vim.lsp.buf.declaration, { buffer = ev.buf, desc = "Go to declaration" })
     vim.keymap.set("n", "gd", ts.lsp_definitions, { buffer = ev.buf, desc = "Go to definition" })
     vim.keymap.set("n", "K", vim.lsp.buf.hover, { buffer = ev.buf, desc = "Hover" })
-    vim.keymap.set("n", "gi", vim.lsp.buf.implementation, { buffer = ev.buf, desc = "Go to implemetation" })
+    vim.keymap.set("n", "gi", ts.lsp_implementations, { buffer = ev.buf, desc = "Go to implemetation" })
     vim.keymap.set("n", "<leader>k", vim.lsp.buf.signature_help, { buffer = ev.buf, desc = "Signature help" })
     vim.keymap.set("i", "<C-k>", vim.lsp.buf.signature_help, { buffer = ev.buf, desc = "Signature help" })
     vim.keymap.set(

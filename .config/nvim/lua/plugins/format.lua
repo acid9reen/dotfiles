@@ -19,9 +19,18 @@ return {
         },
       },
       sql_formatter = {
-        args = {
-          "--language",
-          "postgresql",
+        prepend_args = {
+          "--config",
+          "/home/ruslan/.config/sql-formatter/config.json",
+        },
+      },
+      djlint = {
+        prepend_args = {
+          "--line-break-after-multiline-tag",
+          "--max-blank-lines",
+          "1",
+          "--max-line-length",
+          "120",
         },
       },
     },
