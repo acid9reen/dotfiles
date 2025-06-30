@@ -30,7 +30,7 @@ return {
     lazy = false,
     keys = {
       { "<leader>pf", "<cmd>Telescope find_files<cr>", mode = { "n" }, desc = "Find files" },
-      { "<C-p>", "<cmd>Telescope git_files<cr>", mode = { "n" }, desc = "Git files" },
+      { "<leader>pg", "<cmd>Telescope git_files<cr>", mode = { "n" }, desc = "Git files" },
       { "<leader>ps", "<cmd>Telescope live_grep<cr>", mode = { "n" }, desc = "Find in files" },
       { "<leader>fb", "<cmd>Telescope buffers<cr>", mode = { "n" }, desc = "Find buffer" },
       { "<leader>fh", "<cmd>Telescope help_tags<cr>", mode = { "n" }, desc = "Find help" },

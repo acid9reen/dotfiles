@@ -47,3 +47,13 @@
     (raw_string_literal_content) @injection.content @sql
     (#lua-match? @sql "^%s*[eE][xX][pP][lL][aA][iI][nN]%s*")
     (#set! injection.language "sql"))
+
+(raw_string_literal
+    (raw_string_literal_content) @injection.content @sql
+    (#lua-match? @sql "^%s*[cC][rR][eE][aA][tT][eE]%s*")
+    (#set! injection.language "sql"))
+
+(raw_string_literal
+    (raw_string_literal_content) @injection.content @sql
+    (#lua-match? @sql "^%s*[dD][rR][oO][pP]%s*")
+    (#set! injection.language "sql"))

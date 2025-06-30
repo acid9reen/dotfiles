@@ -149,6 +149,7 @@ lspconfig.emmet_language_server.setup({
     "eruby",
     "gotmpl",
     "html",
+    "htmldjango",
     "javascript",
     "javascriptreact",
     "jinja",
