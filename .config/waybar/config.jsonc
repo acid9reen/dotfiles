@@ -21,11 +21,17 @@
         "modules": [
             "pulseaudio",
             "hyprland/language",
+            "network",
             "clock",
         ]
     },
+    "network": {
+        "interface": "wg",
+        "format-ethernet": " 󰌆 ",
+        "on-click": "nmcli c down wg"
+    },
     "mpd": {
-        "format": "{stateIcon} {consumeIcon}{repeatIcon}{singleIcon}{artist} || {title} || {album}",
+        "format": "{stateIcon} {consumeIcon}{repeatIcon}{singleIcon}{artist} -> {title} --- {album}",
         "max-length": 80,
         "format-disconnected": "Disconnected ",
         "format-stopped": "{consumeIcon}{repeatIcon}{singleIcon}Stopped",
@@ -45,8 +51,8 @@
             "on": "1 "
         },
         "state-icons": {
-            "paused": " ",
-            "playing": " "
+            "paused": "||",
+            "playing": "|>"
         },
         "tooltip-format": "MPD (connected)",
         "tooltip-format-disconnected": "MPD (disconnected)",
@@ -87,7 +93,7 @@
             "car": "",
             "default": ["", "", ""]
         },
-        "on-click": "hyprctl dispatch exec \"[move 1645 68;size 900 500;float;stayfocused]\" pavucontrol"
+        "on-click": "hyprctl dispatch exec \"[size 1000 900;move 100%-w-8 52;float;stayfocused;pin]\" pavucontrol"
     },
     "hyprland/language": {
         "format": "{}",
@@ -96,16 +102,17 @@
         "on-click": "hyprctl switchxkblayout brian-low-sofle-choc-consumer-control next"
     },
     "hyprland/workspaces": {
-        "format": "{icon}",
+        "format": "{name}:{icon}",
         "on-click": "activate",
         "on-scroll-up": "hyprctl dispatch workspace -1",
         "on-scroll-down": "hyprctl dispatch workspace +1",
         "format-icons": {
-            "1": "",
-            "2": "",
-            "3": "",
-            "4": "󰺵",
-            "5": "󰍩",
+            "1": "w",
+            "2": "->",
+            "3": "||>",
+            "4": "www",
+            "5": ">_",
+            "default": "~@",
         },
         "persistent-workspaces": {
             "*": 5
@@ -129,7 +136,7 @@
     "custom/quit": {
         "format": "󰗼 Logout",
         "tooltip": false,
-        "on-click": "hyprctl dispatch exit"
+        "on-click": "sleep 1; loginctl terminate-user \"\""
     },
     "custom/reboot": {
         "format": "󰜉 Reboot",

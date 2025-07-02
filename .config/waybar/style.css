@@ -51,7 +51,8 @@ window#waybar {
 }
 
 #workspaces button label {
-  font-size: 25px;
+  font-size: 17;
+  font-weight: bold;
 }
 
 #workspaces button {
@@ -102,7 +103,7 @@ button:hover {
 
 #tray menu menuitem:hover {
     color: @fg0;
-    background-color: @dark_orange;
+    background-color: @dark_blue;
     border-radius: 7px;
 }
 
