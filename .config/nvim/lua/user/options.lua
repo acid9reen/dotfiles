@@ -1,6 +1,6 @@
 local options = {
   backup = false,
-  colorcolumn = { "100" },
+  -- colorcolumn = { "100" },
   completeopt = { "menuone", "noselect" },
   cursorline = false,
   expandtab = true,
