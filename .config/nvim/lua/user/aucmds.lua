@@ -37,3 +37,56 @@ vim.api.nvim_create_autocmd("TermOpen", {
     vim.opt.relativenumber = false
   end,
 })
+
+-- On lsp attach
+vim.api.nvim_create_autocmd("LspAttach", {
+  group = vim.api.nvim_create_augroup("UserLspConfig", {}),
+  callback = function(args)
+    local client = assert(vim.lsp.get_client_by_id(args.data.client_id))
+    local ts = require("telescope.builtin")
+
+    client.server_capabilities.semanticTokensProvider = nil
+
+    if client:supports_method("textDocument/completion") then
+      vim.lsp.completion.enable(true, client.id, args.buf, { autotrigger = false })
+    end
+
+    -- Go to
+    vim.keymap.set("n", "gD", vim.lsp.buf.declaration, { buffer = args.buf, desc = "Go to declaration" })
+    vim.keymap.set("n", "gi", ts.lsp_implementations, { buffer = args.buf, desc = "Go to implemetation" })
+    vim.keymap.set("n", "gd", ts.lsp_definitions, { buffer = args.buf, desc = "Go to definition" })
+    vim.keymap.set("n", "grr", ts.lsp_references, { desc = "Go to references" })
+    vim.keymap.set("n", "<space>D", vim.lsp.buf.type_definition, { buffer = args.buf, desc = "Type definition" })
+
+    vim.keymap.set("n", "K", vim.lsp.buf.hover, { buffer = args.buf, desc = "Hover" })
+    vim.keymap.set("n", "<leader>fs", ts.lsp_document_symbols, { buffer = args.buf, desc = "Find symbols" })
+
+    -- Signature help
+    vim.keymap.set("n", "<leader>k", vim.lsp.buf.signature_help, { buffer = args.buf, desc = "Signature help" })
+    vim.keymap.set("i", "<C-k>", vim.lsp.buf.signature_help, { buffer = args.buf, desc = "Signature help" })
+
+    -- Actions
+    vim.keymap.set("n", "<space>rn", vim.lsp.buf.rename, { buffer = args.buf, desc = "Rename symbol" })
+    vim.keymap.set({ "n", "v" }, "<space>ca", vim.lsp.buf.code_action, { buffer = args.buf, desc = "Code action" })
+
+    -- Workspaces
+    vim.keymap.set(
+      "n",
+      "<space>wa",
+      vim.lsp.buf.add_workspace_folder,
+      { buffer = args.buf, desc = "Add workspace folder" }
+    )
+    vim.keymap.set(
+      "n",
+      "<space>wr",
+      vim.lsp.buf.remove_workspace_folder,
+      { buffer = args.buf, desc = "Remove workspace folder" }
+    )
+    vim.keymap.set(
+      "n",
+      "<space>wl",
+      function() print(vim.inspect(vim.lsp.buf.list_workspace_folders())) end,
+      { buffer = args.buf, desc = "List workspace folders" }
+    )
+  end,
+})
