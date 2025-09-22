@@ -8,3 +8,4 @@ require("user.lsp")
 
 require("config.lazy")
 require("snippets.python")
+require("snippets.editorconfig")

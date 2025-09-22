@@ -38,12 +38,22 @@ vim.api.nvim_create_autocmd("TermOpen", {
   end,
 })
 
+-- Start insert mode when enter terminal
+vim.api.nvim_create_autocmd({ "TermOpen", "BufEnter" }, {
+    pattern = { "*" },
+    callback = function()
+        if vim.opt.buftype:get() == "terminal" then
+            vim.cmd(":startinsert")
+        end
+    end
+})
+
 -- On lsp attach
 vim.api.nvim_create_autocmd("LspAttach", {
   group = vim.api.nvim_create_augroup("UserLspConfig", {}),
   callback = function(args)
     local client = assert(vim.lsp.get_client_by_id(args.data.client_id))
-    local ts = require("telescope.builtin")
+    local fzf = require("fzf-lua")
 
     client.server_capabilities.semanticTokensProvider = nil
 
@@ -53,13 +63,13 @@ vim.api.nvim_create_autocmd("LspAttach", {
 
     -- Go to
     vim.keymap.set("n", "gD", vim.lsp.buf.declaration, { buffer = args.buf, desc = "Go to declaration" })
-    vim.keymap.set("n", "gi", ts.lsp_implementations, { buffer = args.buf, desc = "Go to implemetation" })
-    vim.keymap.set("n", "gd", ts.lsp_definitions, { buffer = args.buf, desc = "Go to definition" })
-    vim.keymap.set("n", "grr", ts.lsp_references, { desc = "Go to references" })
+    vim.keymap.set("n", "gi", fzf.lsp_implementations, { buffer = args.buf, desc = "Go to implemetation" })
+    vim.keymap.set("n", "gd", fzf.lsp_definitions, { buffer = args.buf, desc = "Go to definition" })
+    vim.keymap.set("n", "grr", fzf.lsp_references, { desc = "Go to references" })
     vim.keymap.set("n", "<space>D", vim.lsp.buf.type_definition, { buffer = args.buf, desc = "Type definition" })
 
     vim.keymap.set("n", "K", vim.lsp.buf.hover, { buffer = args.buf, desc = "Hover" })
-    vim.keymap.set("n", "<leader>fs", ts.lsp_document_symbols, { buffer = args.buf, desc = "Find symbols" })
+    vim.keymap.set("n", "<leader>fs", fzf.lsp_document_symbols, { buffer = args.buf, desc = "Find symbols" })
 
     -- Signature help
     vim.keymap.set("n", "<leader>k", vim.lsp.buf.signature_help, { buffer = args.buf, desc = "Signature help" })

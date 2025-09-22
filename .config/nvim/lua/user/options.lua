@@ -6,7 +6,6 @@ local options = {
   expandtab = true,
   guicursor = "n-v-c-sm:block,i-ci-ve:ver25,r-cr-o:hor20",
   hlsearch = false,
-  ignorecase = true,
   incsearch = true,
   nu = true,
   pumheight = 10,

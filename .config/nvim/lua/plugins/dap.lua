@@ -1,20 +1,24 @@
 return {
   {
-    "mfussenegger/nvim-dap",
+    "miroshQa/debugmaster.nvim",
     dependencies = {
+      "mfussenegger/nvim-dap",
+      "jbyuki/one-small-step-for-vimkind",
       "mfussenegger/nvim-dap-python",
       "leoluz/nvim-dap-go",
-      "rcarriga/nvim-dap-ui",
-      "theHamsta/nvim-dap-virtual-text",
       "williamboman/mason.nvim",
     },
     config = function()
+      local dm = require("debugmaster")
+      vim.keymap.set({ "n", "v" }, "<leader>d", dm.mode.toggle, { nowait = true })
+      -- If you want to disable debug mode in addition to leader+d using the Escape key:
+      -- vim.keymap.set("n", "<Esc>", dm.mode.disable)
+      -- This might be unwanted if you already use Esc for ":noh"
+      vim.keymap.set("t", "<C-\\>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
+
+      dm.plugins.osv_integration.enabled = true -- needed if you want to debug neovim lua code
       local dap = require("dap")
-      local ui = require("dapui")
 
-      require("dapui").setup()
-
-      -- Python configuration
       require("dap-python").setup("/home/ruslan/.venvs/debugpy/bin/python")
       require("dap-python").test_runner = "pytest"
       require("dap-go").setup({
@@ -32,9 +36,6 @@ return {
       vim.keymap.set("n", "<space>bb", dap.toggle_breakpoint)
       vim.keymap.set("n", "<space>gb", dap.run_to_cursor)
 
-      -- Eval var under cursor
-      vim.keymap.set("n", "<space>??", function() require("dapui").eval(nil, { enter = true }) end)
-
       vim.keymap.set("n", "<F1>", dap.continue)
       vim.keymap.set("n", "<F2>", dap.step_into)
       vim.keymap.set("n", "<F3>", dap.step_over)
@@ -43,11 +44,6 @@ return {
       vim.keymap.set("n", "<F6>", dap.up)
       vim.keymap.set("n", "<F7>", dap.down)
       vim.keymap.set("n", "<F11>", dap.restart)
-
-      dap.listeners.before.attach.dapui_config = function() ui.open() end
-      dap.listeners.before.launch.dapui_config = function() ui.open() end
-      dap.listeners.before.event_terminated.dapui_config = function() ui.close() end
-      dap.listeners.before.event_exited.dapui_config = function() ui.close() end
     end,
   },
 }

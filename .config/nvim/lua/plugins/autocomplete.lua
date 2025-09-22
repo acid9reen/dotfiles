@@ -13,13 +13,22 @@ return {
     },
     snippets = { preset = "luasnip" },
     completion = {
-      menu = { auto_show = false },
+      accept = { auto_brackets = { enabled = false } },
+      menu = {
+        auto_show = false,
+        draw = {
+          columns = {
+            { "label", "label_description", gap = 1 },
+            { "kind_icon", "kind", gap = 1 },
+          },
+        },
+      },
       documentation = {
         auto_show = true,
         auto_show_delay_ms = 500,
       },
       ghost_text = {
-        enabled = true,
+        enabled = false,
         show_with_menu = false,
       },
     },
