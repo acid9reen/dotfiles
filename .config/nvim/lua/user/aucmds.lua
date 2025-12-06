@@ -38,16 +38,6 @@ vim.api.nvim_create_autocmd("TermOpen", {
   end,
 })
 
--- Start insert mode when enter terminal
-vim.api.nvim_create_autocmd({ "TermOpen", "BufEnter" }, {
-    pattern = { "*" },
-    callback = function()
-        if vim.opt.buftype:get() == "terminal" then
-            vim.cmd(":startinsert")
-        end
-    end
-})
-
 -- On lsp attach
 vim.api.nvim_create_autocmd("LspAttach", {
   group = vim.api.nvim_create_augroup("UserLspConfig", {}),
@@ -98,5 +88,28 @@ vim.api.nvim_create_autocmd("LspAttach", {
       function() print(vim.inspect(vim.lsp.buf.list_workspace_folders())) end,
       { buffer = args.buf, desc = "List workspace folders" }
     )
+  end,
+})
+
+vim.api.nvim_create_autocmd("LspAttach", {
+  group = vim.api.nvim_create_augroup("lsp_attach_disable_ruff_hover", { clear = true }),
+  callback = function(args)
+    local client = vim.lsp.get_client_by_id(args.data.client_id)
+    if client == nil then return end
+    if client.name == "ruff" then
+      -- Disable hover in favor of Pyright
+      client.server_capabilities.hoverProvider = false
+    end
+  end,
+  desc = "LSP: Disable hover capability from Ruff",
+})
+
+vim.api.nvim_create_autocmd("FileType", {
+  group = vim.api.nvim_create_augroup("EnableTreesitterHighlighting", { clear = true }),
+  desc = "Try to enable tree-sitter syntax highlighting",
+  pattern = "*",
+  callback = function()
+    pcall(function() vim.treesitter.start() end)
+    -- vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
   end,
 })

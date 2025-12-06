@@ -1,30 +1,29 @@
-vim.lsp.enable("basedpyright")
 vim.lsp.config("basedpyright", {
   settings = {
     basedpyright = {
       analysis = {
         autoSearchPaths = true,
         diagnosticMode = "openFilesOnly",
-        useLibraryCodeForTypes = true,
       },
+      disableOrganizeImports = true,
       typeCheckingMode = "standard",
     },
   },
 })
+vim.lsp.enable("basedpyright")
 
-vim.lsp.enable("ruff")
 vim.lsp.config("ruff", {})
+vim.lsp.enable("ruff")
 
-vim.lsp.enable("dockerls")
 vim.lsp.config("dockerls", {})
+vim.lsp.enable("dockerls")
 
-vim.lsp.enable("yamlls")
 vim.lsp.config("yamlls", {})
+vim.lsp.enable("yamlls")
 
-vim.lsp.enable("taplo")
 vim.lsp.config("taplo", {})
+vim.lsp.enable("taplo")
 
-vim.lsp.enable("lua_ls")
 vim.lsp.config("lua_ls", {
   on_init = function(client)
     local path = client.workspace_folders[1].name
@@ -47,6 +46,7 @@ vim.lsp.config("lua_ls", {
     Lua = {},
   },
 })
+vim.lsp.enable("lua_ls")
 
 vim.lsp.enable("jsonls")
 vim.lsp.config("jsonls", {})
@@ -54,7 +54,6 @@ vim.lsp.config("jsonls", {})
 vim.lsp.enable("gitlab_ci_ls")
 vim.lsp.config("gitlab_ci_ls", {})
 
-vim.lsp.enable("gopls")
 vim.lsp.config("gopls", {
   settings = {
     gopls = {
@@ -85,8 +84,8 @@ vim.lsp.config("gopls", {
     },
   },
 })
+vim.lsp.enable("gopls")
 
-vim.lsp.enable("htmx")
 vim.lsp.config("htmx", {
   filetypes = {
     "aspnetcorerazor",
@@ -136,7 +135,8 @@ vim.lsp.config("htmx", {
   },
 })
 
-vim.lsp.enable("emmet_language_server")
+vim.lsp.enable("htmx")
+
 vim.lsp.config("emmet_language_server", {
   filetypes = {
     "css",
@@ -154,3 +154,7 @@ vim.lsp.config("emmet_language_server", {
     "typescriptreact",
   },
 })
+vim.lsp.enable("emmet_language_server")
+
+vim.lsp.enable("clangd")
+vim.lsp.config("clangd", {})

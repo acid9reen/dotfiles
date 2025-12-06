@@ -3,7 +3,9 @@ return {
   dependencies = { "nvim-tree/nvim-web-devicons" },
   opts = {
     "telescope",
-    -- winopts = { preview = { default = "bat" } },
+    grep = {
+      rg_opts = [[--column --line-number --no-heading --color=always --smart-case --glob '!vendor/*' --max-columns=4096 -e]],
+    },
   },
   lazy = false,
   keys = {

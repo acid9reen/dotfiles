@@ -2,9 +2,8 @@ return {
   {
     "nvim-treesitter/nvim-treesitter",
     build = ":TSUpdate",
-    event = "BufEnter",
-    lazy = true,
-    main = "nvim-treesitter.configs",
+    lazy = false,
+    branch = "main",
     opts = {
       ensure_installed = {
         "go",
@@ -17,7 +16,6 @@ return {
         "toml",
         "yaml",
       },
-      sync_install = false,
       highlight = { enable = true },
       indent = { enable = true },
     },

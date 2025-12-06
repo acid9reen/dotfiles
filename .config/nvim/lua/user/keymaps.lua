@@ -28,8 +28,8 @@ vim.keymap.set("n", "<space>st", function()
   vim.cmd(":startinsert")
 end, { desc = "Open small terminal" })
 
-vim.keymap.set("n", "<A-j>", "<Cmd> cn <CR>", { desc = "Go to next item in quickfix list" })
-vim.keymap.set("n", "<A-k>", "<Cmd> cp <CR>", { desc = "Go to previous item in quickfix list" })
+vim.keymap.set("n", "<A-j>", "<Cmd> cn <CR>zz", { desc = "Go to next item in quickfix list" })
+vim.keymap.set("n", "<A-k>", "<Cmd> cp <CR>zz", { desc = "Go to previous item in quickfix list" })
 
 -- Visually select pasted text
 vim.keymap.set("n", "<leader>vp", "`[v`]", { desc = "Visually select pasted text" })

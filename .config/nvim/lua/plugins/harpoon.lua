@@ -5,7 +5,15 @@ return {
     lazy = true,
     config = true,
     keys = {
-      { "<leader>a", function() require("harpoon"):list():add() end, mode = { "n" }, desc = "Add file to Harpoon" },
+      {
+        "<leader>a",
+        function()
+          require("harpoon"):list():add()
+          vim.notify(string.format("Add buffer %s to Harpoon", vim.api.nvim_buf_get_name(0)), vim.log.levels.INFO)
+        end,
+        mode = { "n" },
+        desc = "Add file to Harpoon",
+      },
       {
         "<C-e>",
         function()

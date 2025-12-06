@@ -1,6 +1,5 @@
 local options = {
   backup = false,
-  -- colorcolumn = { "100" },
   completeopt = { "menuone", "noselect" },
   cursorline = false,
   expandtab = true,
@@ -50,3 +49,12 @@ vim.cmd("set whichwrap+=<,>,[,],h,l")
 vim.opt.keymap = "russian-jcukenwin"
 vim.opt.iminsert = 0
 vim.opt.imsearch = 0
+
+-- Python indent
+local python_indent = {
+  open_paren = "shiftwidth()",
+  continue = "shiftwidth()",
+  closed_paren_align_last_line = false,
+}
+
+vim.g.python_indent = python_indent
