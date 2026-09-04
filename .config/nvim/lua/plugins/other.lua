@@ -35,4 +35,19 @@ return {
   {
     "jasonwoodland/vim-html-indent",
   },
+  { "nvim-mini/mini.indentscope", version = false, config = true },
+  { "nvim-tree/nvim-web-devicons", config = true },
+  {
+    "folke/todo-comments.nvim",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    config = true,
+  },
+  {
+    "OXY2DEV/markview.nvim",
+    lazy = false,
+
+    -- Completion for `blink.cmp`
+    dependencies = { "saghen/blink.cmp" },
+  },
+  { "nvim-mini/mini.align", version = false, config = true },
 }

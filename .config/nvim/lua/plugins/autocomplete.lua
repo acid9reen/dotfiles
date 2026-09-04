@@ -11,6 +11,13 @@ return {
       ["<Tab>"] = false,
       ["<S-Tab>"] = false,
     },
+    -- fuzzy = {
+    --   sorts = {
+    --     "exact",
+    --     "score",
+    --     "sort_text",
+    --   },
+    -- },
     snippets = { preset = "luasnip" },
     completion = {
       accept = { auto_brackets = { enabled = false } },

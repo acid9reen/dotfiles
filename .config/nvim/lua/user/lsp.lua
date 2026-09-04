@@ -10,19 +10,14 @@ vim.lsp.config("basedpyright", {
     },
   },
 })
-vim.lsp.enable("basedpyright")
 
 vim.lsp.config("ruff", {})
-vim.lsp.enable("ruff")
 
 vim.lsp.config("dockerls", {})
-vim.lsp.enable("dockerls")
 
 vim.lsp.config("yamlls", {})
-vim.lsp.enable("yamlls")
 
 vim.lsp.config("taplo", {})
-vim.lsp.enable("taplo")
 
 vim.lsp.config("lua_ls", {
   on_init = function(client)
@@ -46,12 +41,9 @@ vim.lsp.config("lua_ls", {
     Lua = {},
   },
 })
-vim.lsp.enable("lua_ls")
 
-vim.lsp.enable("jsonls")
 vim.lsp.config("jsonls", {})
 
-vim.lsp.enable("gitlab_ci_ls")
 vim.lsp.config("gitlab_ci_ls", {})
 
 vim.lsp.config("gopls", {
@@ -80,11 +72,10 @@ vim.lsp.config("gopls", {
       completeUnimported = true,
       staticcheck = true,
       directoryFilters = { "-.git", "-.vscode", "-.idea", "-.vscode-test", "-node_modules" },
-      semanticTokens = false,
+      semanticTokens = true,
     },
   },
 })
-vim.lsp.enable("gopls")
 
 vim.lsp.config("htmx", {
   filetypes = {
@@ -135,8 +126,6 @@ vim.lsp.config("htmx", {
   },
 })
 
-vim.lsp.enable("htmx")
-
 vim.lsp.config("emmet_language_server", {
   filetypes = {
     "css",
@@ -154,7 +143,20 @@ vim.lsp.config("emmet_language_server", {
     "typescriptreact",
   },
 })
-vim.lsp.enable("emmet_language_server")
 
-vim.lsp.enable("clangd")
 vim.lsp.config("clangd", {})
+
+vim.lsp.enable({
+  "basedpyright",
+  "clangd",
+  "dockerls",
+  -- "emmet_language_server",
+  "gitlab_ci_ls",
+  "gopls",
+  -- "htmx",
+  "jsonls",
+  "lua_ls",
+  -- "ruff",
+  "taplo",
+  "yamlls",
+})

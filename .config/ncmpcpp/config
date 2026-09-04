@@ -23,7 +23,7 @@
 #
 ##### connection settings #####
 #
-#mpd_host = localhost
+mpd_host = localhost
 #
 #mpd_port = 6600
 #
@@ -358,7 +358,7 @@ mpd_music_dir = /home/ruslan/data/Music
 #
 #volume_change_step = 2
 #
-#autocenter_mode = no
+autocenter_mode = yes
 #
 #centered_cursor = no
 #
@@ -374,7 +374,7 @@ mpd_music_dir = /home/ruslan/data/Music
 #
 ## Available values: classic, alternative.
 ##
-#user_interface = classic
+user_interface = alternative
 #
 #data_fetching_delay = yes
 #

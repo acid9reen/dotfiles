@@ -42,7 +42,6 @@ vim.keymap.set(
   { desc = "Prev diagnostic" }
 )
 vim.keymap.set("n", "]d", function() vim.diagnostic.jump({ count = 1, float = true }) end, { desc = "Next diagnostic" })
-vim.keymap.set("n", "<space>q", vim.diagnostic.setloclist, { desc = "Diagnostics" })
 vim.keymap.set("n", "gK", function()
   local new_config = not vim.diagnostic.config().virtual_lines
   vim.diagnostic.config({ virtual_lines = new_config })
@@ -53,3 +52,5 @@ vim.keymap.set(
   function() vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled()) end,
   { desc = "Toggle inlay hints" }
 )
+
+vim.keymap.set("n", "<leader>q", ":bp | sp | bn | bd <CR>", { desc = "Close current buffer" })

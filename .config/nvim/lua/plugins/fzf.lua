@@ -3,6 +3,9 @@ return {
   dependencies = { "nvim-tree/nvim-web-devicons" },
   opts = {
     "telescope",
+    file_ignore_patterns = {
+      "/mock[^/]*.go$", -- ignore golang mocks in search
+    },
     grep = {
       rg_opts = [[--column --line-number --no-heading --color=always --smart-case --glob '!vendor/*' --max-columns=4096 -e]],
     },
